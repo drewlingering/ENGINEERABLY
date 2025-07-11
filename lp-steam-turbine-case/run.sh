@@ -27,3 +27,9 @@ rhoSimpleFoam > log.rhoSimpleFoam
 
 echo "✅ Simulation complete!"
 echo "📊 Outputs written to log.rhoSimpleFoam and meshReport.log"
+
+surfaceCheck constant/triSurface/inlet.stl
+surfaceCheck constant/triSurface/outletFore.stl
+surfaceCheck constant/triSurface/outletAft.stl
+surfaceCheck constant/triSurface/turbineBody.stl
+
