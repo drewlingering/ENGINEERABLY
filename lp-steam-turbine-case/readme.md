@@ -24,7 +24,7 @@ This repository contains the simulation setup for a low-pressure steam turbine i
    checkMesh
 
 engineerably-lp-steam-turbine-case/
----
+engineerably-lp-steam-turbine-case-v2/
 ├── 0/
 ---
 │   ├── U
@@ -37,18 +37,34 @@ engineerably-lp-steam-turbine-case/
 ---
 │   ├── triSurface/
 ---
-│   │   └── placeholder.stl
+│   │   ├── inlet.stl
 ---
-│   └── polyMesh/
+│   │   ├── outletFore.stl
 ---
-│       └── boundary
+│   │   ├── outletAft.stl
+---
+│   │   └── turbineBody.stl
+---
+│   ├── polyMesh/
+---
+│   │   └── boundary              # Generated after snappyHexMesh
+---
+│   ├── thermophysicalProperties
+---
+│   └── turbulenceProperties
 ---
 ├── system/
 ---
-│   ├── snappyHexMeshDict
+│   ├── blockMeshDict             # Minimal version (for snappy base mesh)
+---
+│   ├── snappyHexMeshDict         # Handles STL + patch refinement
 ---
 │   ├── fvSchemes
 ---
-│   └── fvSolution
+│   ├── fvSolution
 ---
-└── README.md
+│   └── controlDict
+---
+├── run.sh                        # Automation script for mesh + solver
+---
+└── README.md                     # Documentation for geometry, steps, and physics
