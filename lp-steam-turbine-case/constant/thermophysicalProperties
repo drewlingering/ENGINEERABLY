@@ -1,0 +1,30 @@
+thermoType
+{
+    type            heRhoThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState rhoSteam;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+mixture
+{
+    specie
+    {
+        molWeight       18.01528;   // kg/kmol for H₂O
+    }
+
+    thermodynamics
+    {
+        Cp              2100;       // J/kg·K (adjusted for superheated steam)
+        Hf              0;          // J/kg
+    }
+
+    transport
+    {
+        As              1.4792e-06; // Sutherland coefficient
+        Ts              273.15;     // Reference temperature
+    }
+}
