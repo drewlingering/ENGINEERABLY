@@ -1,0 +1,26 @@
+dimensions      [0 0 0 1 0 0 0];
+internalField   uniform 523.15;   // K (250°C)
+
+boundaryField
+{
+    inlet
+    {
+        type fixedValue;
+        value uniform 523.15;     // K
+    }
+
+    outletFore
+    {
+        type zeroGradient;
+    }
+
+    outletAft
+    {
+        type zeroGradient;
+    }
+
+    walls
+    {
+        type zeroGradient;
+    }
+}
