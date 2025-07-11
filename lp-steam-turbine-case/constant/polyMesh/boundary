@@ -1,0 +1,38 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    object      boundary;
+}
+
+4
+(
+    inlet
+    {
+        type            patch;
+        nFaces          1782;       // Number of faces on inlet patch
+        startFace       0;          // Starting face index for inlet
+    }
+
+    outletFore
+    {
+        type            patch;
+        nFaces          1420;       // Faces at fore outlet
+        startFace       1782;
+    }
+
+    outletAft
+    {
+        type            patch;
+        nFaces          1600;       // Faces at aft outlet
+        startFace       3202;
+    }
+
+    walls
+    {
+        type            wall;
+        nFaces          61500;      // All remaining surface faces
+        startFace       4802;
+    }
+)
