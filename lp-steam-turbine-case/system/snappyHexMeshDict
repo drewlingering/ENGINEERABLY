@@ -1,9 +1,27 @@
 geometry
 {
-    turbineGeometry.stl
+    inlet.stl
     {
         type triSurfaceMesh;
-        name turbine;
+        name inlet;
+    }
+
+    outletFore.stl
+    {
+        type triSurfaceMesh;
+        name outletFore;
+    }
+
+    outletAft.stl
+    {
+        type triSurfaceMesh;
+        name outletAft;
+    }
+
+    turbineBody.stl
+    {
+        type triSurfaceMesh;
+        name turbineBody;
     }
 }
 
@@ -11,26 +29,29 @@ castellatedMesh true;
 snap true;
 addLayers false;
 
-features
-(
-);
-
 refinementSurfaces
 {
-    turbine
+    inlet
+    {
+        level (4 5);
+    }
+
+    outletFore
     {
         level (3 4);
-        regions
-        {
-            inlet        { level (4 5); }
-            outletFore   { level (3 4); }
-            outletAft    { level (3 4); }
-        }
+    }
+
+    outletAft
+    {
+        level (3 4);
+    }
+
+    turbineBody
+    {
+        level (2 3);
     }
 }
 
-refinementRegions
-{}
+refinementRegions { }
 
-meshQualityControls
-{}
+meshQualityControls { }
