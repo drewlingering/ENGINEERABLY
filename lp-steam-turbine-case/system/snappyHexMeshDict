@@ -1,0 +1,36 @@
+geometry
+{
+    turbineGeometry.stl
+    {
+        type triSurfaceMesh;
+        name turbine;
+    }
+}
+
+castellatedMesh true;
+snap true;
+addLayers false;
+
+features
+(
+);
+
+refinementSurfaces
+{
+    turbine
+    {
+        level (3 4);
+        regions
+        {
+            inlet        { level (4 5); }
+            outletFore   { level (3 4); }
+            outletAft    { level (3 4); }
+        }
+    }
+}
+
+refinementRegions
+{}
+
+meshQualityControls
+{}
