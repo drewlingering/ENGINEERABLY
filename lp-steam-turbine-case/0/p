@@ -1,0 +1,29 @@
+dimensions      [1 -1 -2 0 0 0 0];
+internalField   uniform 100000;   // Pa (adjust as needed for internal pressure)
+
+boundaryField
+{
+    inlet
+    {
+        type totalPressure;
+        p0 uniform 1150000;       // Pa (e.g. 1.15 MPa inlet total pressure)
+        value uniform 100000;     // Reference internal value
+    }
+
+    outletFore
+    {
+        type fixedValue;
+        value uniform 100000;     // Pa (e.g. condenser outlet pressure)
+    }
+
+    outletAft
+    {
+        type fixedValue;
+        value uniform 100000;     // Same as above, unless staged flow
+    }
+
+    walls
+    {
+        type zeroGradient;
+    }
+}
