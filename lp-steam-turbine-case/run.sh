@@ -1,35 +1,24 @@
 #!/bin/bash
 
-# Exit on error
-set -e
+# Run script for LP steam turbine CFD analysis
 
-echo "▶ Starting LP Steam Turbine case setup..."
+# Clean previous case
+rm -rf 0.* [1-9]* log.* processor* constant/polyMesh
 
-# Step 1: Clean old mesh (optional)
-echo "🧹 Cleaning previous mesh files..."
-rm -rf constant/polyMesh
+# Copy initial conditions
+cp -r 0 0.org
 
-# Step 2: Generate background mesh
-echo "📐 Running blockMesh..."
-blockMesh
+# Run surfaceFeatureExtract
+surfaceFeatureExtract
 
-# Step 3: Generate refined mesh from STL
-echo "🧊 Running snappyHexMesh..."
+# Run snappyHexMesh
 snappyHexMesh -overwrite
 
-# Step 4: Check mesh integrity
-echo "🔍 Running checkMesh..."
-checkMesh > meshReport.log
+# Run simpleFoam
+simpleFoam
 
-# Step 5: Start solver
-echo "💨 Launching solver..."
-rhoSimpleFoam > log.rhoSimpleFoam
+# Reconstruct and visualize (optional)
+# reconstructPar
+# paraFoam
 
-echo "✅ Simulation complete!"
-echo "📊 Outputs written to log.rhoSimpleFoam and meshReport.log"
-
-surfaceCheck constant/triSurface/inlet.stl
-surfaceCheck constant/triSurface/outletFore.stl
-surfaceCheck constant/triSurface/outletAft.stl
-surfaceCheck constant/triSurface/turbineBody.stl
-
+echo "CFD simulation complete. Check log files for errors."
