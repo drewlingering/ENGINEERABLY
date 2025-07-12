@@ -1,57 +1,131 @@
-geometry
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2312                                |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
 {
-    inlet.stl
-    {
-        type triSurfaceMesh;
-        name inlet;
-    }
-
-    outletFore.stl
-    {
-        type triSurfaceMesh;
-        name outletFore;
-    }
-
-    outletAft.stl
-    {
-        type triSurfaceMesh;
-        name outletAft;
-    }
-
-    turbineBody.stl
-    {
-        type triSurfaceMesh;
-        name turbineBody;
-    }
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      snappyHexMeshDict;
 }
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 castellatedMesh true;
-snap true;
-addLayers false;
+snap            true;
+addLayers       false;
 
-refinementSurfaces
+geometry
 {
-    inlet
+    turbine.stl
     {
-        level (4 5);
-    }
-
-    outletFore
-    {
-        level (3 4);
-    }
-
-    outletAft
-    {
-        level (3 4);
-    }
-
-    turbineBody
-    {
-        level (2 3);
+        type triSurfaceMesh;
+        name turbine;
     }
 }
 
-refinementRegions { }
+castellatedMeshControls
+{
+    maxLocalCells 1000000;
+    maxGlobalCells 2000000;
+    minRefinementCells 0;
+    maxLoadUnbalance 0.10;
+    nCellsBetweenLevels 2;
 
-meshQualityControls { }
+    features
+    (
+        { file "turbine.eMesh"; level 2; }
+    );
+
+    refinementSurfaces
+    {
+        turbine
+        {
+            level (2 2);
+        }
+    }
+
+    // Define regions using coordinate-based boxes
+    refinementRegions
+    {
+        inlet
+        {
+            mode distance;
+            levels ((0.1 2)); // Refine near inlet
+            // Box around conical top (z > 0.8 * height)
+            cellZone inside;
+            cellZoneInside pointAndNormal (0 0 0.9 0 0 1); // Adjust z based on model
+        }
+        foreOutlet
+        {
+            mode distance;
+            levels ((0.1 2)); // Refine near fore outlet
+            // Box around forward annular region (x < 0, z ~ 0.2 * height)
+            cellZone inside;
+            cellZoneInside pointAndNormal (-0.5 0 0.2 0 0 1); // Adjust x, z
+        }
+        aftOutlet
+        {
+            mode distance;
+            levels ((0.1 2)); // Refine near aft outlet
+            // Box around rearward annular region (x > 0, z ~ 0.2 * height)
+            cellZone inside;
+            cellZoneInside pointAndNormal (0.5 0 0.2 0 0 1); // Adjust x, z
+        }
+    }
+
+    resolveFeatureAngle 30;
+    locationInMesh (0 0 0.5); // Seed inside cavity, adjust based on model height
+    allowFreeStandingZoneFaces true;
+    nCellsBetweenLevels 3; // Increase for recursive outward snapping
+}
+
+snapControls
+{
+    nSmoothPatch 3;
+    tolerance 1.0;
+    nSolveIter 30;
+    nRelaxIter 5;
+}
+
+addLayersControls
+{
+    layers
+    {
+        "turbine"
+        {
+            nSurfaceLayers 1;
+        }
+    }
+    relativeSizes true;
+    expansionRatio 1.0;
+    finalLayerThickness 0.3;
+    minThickness 0.1;
+}
+
+meshQualityControls
+{
+    maxNonOrtho 65;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+    maxConcave 80;
+    minFlatness 0.5;
+    minVol 1e-13;
+    minTetQuality -1e30;
+    minArea -1;
+    minTwist 0.02;
+    minDeterminant 0.001;
+    minFaceWeight 0.02;
+    minVolRatio 0.01;
+    minTriangleTwist -1;
+    nSmoothScale 4;
+    errorReduction 0.75;
+}
+
+mergeTolerance 1e-6;
+
+// ************************************************************************* //
