@@ -56,26 +56,26 @@ castellatedMeshControls
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (0 0 0.9 0 0 1); // Adjust z (e.g., 90% height)
+            cellZoneInside pointAndNormal (0 0 3.4 0 0 1); // Near z = 3.5 m (top)
         }
         foreOutlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (-0.5 0 0.2 0 0 1); // Adjust x, z
+            cellZoneInside pointAndNormal (-0.5 0 0.75 0 0 1); // x < 0, z = 0.75 m
         }
         aftOutlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (0.5 0 0.2 0 0 1); // Adjust x, z
+            cellZoneInside pointAndNormal (0.5 0 0.75 0 0 1); // x > 0, z = 0.75 m
         }
     }
 
     resolveFeatureAngle 30;
-    locationInMesh (0 0 0.45); // Seed inside cavity, adjust based on model height
+    locationInMesh (0 0 0.75); // Seed inside cavity, mid-z of -2.0 to 3.5 m
     allowFreeStandingZoneFaces true;
 }
 
