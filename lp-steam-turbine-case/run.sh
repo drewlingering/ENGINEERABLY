@@ -2,20 +2,20 @@
 
 # Run script for LP steam turbine CFD analysis
 
-# Clean previous case
-rm -rf 0.* [1-9]* log.* processor* constant/polyMesh
+# Clean previous case to reset for each run
+rm -rf 0.* [1-9]* log.* processor* constant/polyMesh 2>/dev/null
 
-# Copy initial conditions
-cp -r 0 0.org
+# Copy initial conditions from backup
+cp -r 0.org 0
 
-# Run surfaceFeatureExtract
-surfaceFeatureExtract
+# Run surfaceFeatures (replaces surfaceFeatureExtract)
+surfaceFeatures
 
 # Run snappyHexMesh
 snappyHexMesh -overwrite
 
-# Run simpleFoam
-simpleFoam
+# Run foamRun with incompressibleFluid solver (replaces simpleFoam)
+foamRun -solver incompressibleFluid
 
 # Reconstruct and visualize (optional)
 # reconstructPar
