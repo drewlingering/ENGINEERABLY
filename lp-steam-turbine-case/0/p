@@ -1,8 +1,8 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  v2312                                |
-|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|  \\    /   O peration     | Version:  12                                    |
+|   \\  /    A nd           | Website:  https://openfoam.org                  |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 FoamFile
@@ -17,26 +17,22 @@ FoamFile
 
 dimensions      [0 2 -2 0 0 0 0];
 
-internalField   uniform 1e5; // Initial pressure (e.g., 1 bar)
+internalField   uniform 0;
 
 boundaryField
 {
     inlet
     {
+        type            zeroGradient;
+    }
+    outlet
+    {
         type            fixedValue;
-        value           uniform 1e5;
+        value           uniform 0;
     }
-    foreOutlet
+    walls
     {
         type            zeroGradient;
-    }
-    aftOutlet
-    {
-        type            zeroGradient;
-    }
-    turbineWalls
-    {
-        type            zeroGradient; // Default wall, adjust if needed
     }
 }
 
