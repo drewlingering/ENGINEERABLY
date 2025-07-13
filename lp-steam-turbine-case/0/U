@@ -1,8 +1,8 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  v2312                                |
-|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|  \\    /   O peration     | Version:  12                                    |
+|   \\  /    A nd           | Website:  https://openfoam.org                  |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 FoamFile
@@ -24,21 +24,15 @@ boundaryField
     inlet
     {
         type            fixedValue;
-        value           uniform (10 0 0); // Initial velocity (adjust magnitude)
+        value           uniform (0 0 1); // Example flow downward
     }
-    foreOutlet
+    outlet
     {
-        type            pressureInletOutletVelocity;
-        value           uniform (0 0 0);
+        type            zeroGradient;
     }
-    aftOutlet
+    walls
     {
-        type            pressureInletOutletVelocity;
-        value           uniform (0 0 0);
-    }
-    turbineWalls
-    {
-        type            noSlip; // Wall boundary
+        type            noSlip;
     }
 }
 
