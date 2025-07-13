@@ -75,7 +75,7 @@ castellatedMeshControls
     }
 
     resolveFeatureAngle 30;
-    locationInMesh (0 0 0.5); // Seed inside cavity, adjust based on model height
+    locationInMesh (0 0 0.45); // Seed inside cavity, adjust based on model height
     allowFreeStandingZoneFaces true;
 }
 
