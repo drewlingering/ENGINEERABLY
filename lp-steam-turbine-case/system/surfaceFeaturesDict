@@ -1,8 +1,8 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  v2312                                |
-|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|  \\    /   O peration     | Version:  12                                    |
+|   \\  /    A nd           | Website:  https://openfoam.org                  |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 FoamFile
@@ -11,7 +11,7 @@ FoamFile
     format      ascii;
     class       dictionary;
     location    "system";
-    object      surfaceFeatureExtractDict;
+    object      surfaceFeaturesDict;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -20,20 +20,18 @@ surfaces
     "turbine.stl"
 );
 
-extractionMethod   extractFromSurface;
-
-extractFromSurfaceCoeffs
+turbine.stl
 {
-    includedAngle    150; // Extract edges with angle > 150 degrees
-}
+    // Extract features based on angle
+    includedAngle 150; // Extract edges with angle > 150 degrees
 
-subsetFeatures
-{
-    nonManifoldEdges no;
-    openEdges        yes;
-    multipleEdges    no;
+    // Optional: Define geometric subsets (adjust if needed)
+    subset
+    {
+        nonManifoldEdges no;
+        openEdges yes;
+        multipleEdges no;
+    }
 }
-
-writeObj            yes;
 
 // ************************************************************************* //
