@@ -24,7 +24,7 @@ geometry
     turbine.stl
     {
         type triSurfaceMesh;
-        file "constant/triSurface/turbine.stl"; // Path in m, consistent with mm input
+        file "constant/triSurface/turbine.stl";
         name turbine;
     }
 }
@@ -48,8 +48,8 @@ castellatedMeshControls
         {
             level (2 2); // Refine near the inner surface
             faceType boundary;
-            cellZone turbineInside; // Zone for the inner cavity
-            cellZoneInside pointAndNormal (0 0 0.75 0 0 1); // Normal points outward, 0.75 m = 750 mm
+            cellZone flowPath; // Zone for the flow path (cavity)
+            cellZoneInside pointAndNormal (0 0 750 0 0 -1); // Inside cavity, normal outward
         }
     }
 
@@ -58,29 +58,29 @@ castellatedMeshControls
         inlet
         {
             mode distance;
-            levels ((0.1 2));
+            levels ((100 2)); // 100 mm distance
             cellZone inside;
-            cellZoneInside pointAndNormal (0 0 1.0 0 0 1); // z = 1.0 m (1000 mm)
+            cellZoneInside pointAndNormal (0 0 3500 0 0 1); // z = 3500 mm
         }
         foreOutlet
         {
             mode distance;
-            levels ((0.1 2));
+            levels ((100 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (-0.5 0 0.75 0 0 1); // x = -0.5 m (500 mm)
+            cellZoneInside pointAndNormal (-750 0 750 0 0 1); // x = -750 mm
         }
         aftOutlet
         {
             mode distance;
-            levels ((0.1 2));
+            levels ((100 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (0.5 0 0.75 0 0 1); // x = 0.5 m (500 mm)
+            cellZoneInside pointAndNormal (750 0 750 0 0 1); // x = 750 mm
         }
     }
 
-    locationInMesh (0 0 0.75); // Inside cavity, 0.75 m = 750 mm
-    maxRefinement 3; // Limit refinement to prevent breaching outer limits
-    minCellSize 0.01; // 10 mm minimum cell size in m
+    locationInMesh (0 0 750); // Inside cavity, center at 750 mm
+    maxRefinement 3;
+    minCellSize 10; // 10 mm minimum cell size
 }
 
 snapControls
