@@ -55,34 +55,33 @@ castellatedMeshControls
 
     refinementRegions
     {
-        // Optional refinement near boundaries
         inlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (0 0 1.0 0 0 1); // Near z = 1000 mm
+            cellZoneInside pointAndNormal (0 0 1.0 0 0 1); // Near z = 1.0 m
         }
         foreOutlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (-0.5 0 0.75 0 0 1); // Near x = -500 mm
+            cellZoneInside pointAndNormal (-0.5 0 0.75 0 0 1); // Near x = -0.5 m
         }
         aftOutlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (0.5 0 0.75 0 0 1); // Near x = 500 mm
+            cellZoneInside pointAndNormal (0.5 0 0.75 0 0 1); // Near x = 0.5 m
         }
     }
 
-    locationInMesh (0 0 0.75); // Inside the cavity, within 500 mm radius
+    locationInMesh (0 0 0.75); // Inside the cavity, within 0.5 m radius
     maxRefinement 3; // Limit refinement to prevent breaching outer limits
-    // Ensure mesh stays within STL bounds
-    minCellSize 0.01; // Minimum cell size in meters (10 mm) to control expansion
+    minCellSize 0.01; // Minimum cell size 10 mm (0.01 m) to control expansion
+    // Ensure mesh stays within STL bounds (-0.75 -2.0 -2.0 to 0.75 2.0 3.5 m)
 }
 
 snapControls
@@ -115,18 +114,4 @@ meshQualityControls
     maxInternalSkewness 4;
     maxConcave 80;
     minFlatness 0.5;
-    minVol 1e-13;
-    minTetQuality -1e30;
-    minArea -1;
-    minTwist 0.02;
-    minDeterminant 0.001;
-    minFaceWeight 0.02;
-    minVolRatio 0.01;
-    minTriangleTwist -1;
-    nSmoothScale 4;
-    errorReduction 0.75;
-}
-
-mergeTolerance 1e-6;
-
-// ************************************************************************* //
+   ...
