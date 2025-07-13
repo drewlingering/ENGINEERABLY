@@ -24,6 +24,7 @@ geometry
     turbine.stl
     {
         type triSurfaceMesh;
+        file "constant/triSurface/turbine.stl";
         name turbine;
     }
 }
@@ -34,7 +35,7 @@ castellatedMeshControls
     maxGlobalCells 2000000;
     minRefinementCells 0;
     maxLoadUnbalance 0.10;
-    nCellsBetweenLevels 3;
+    nCellsBetweenLevels 2;
 
     features
     (
@@ -45,38 +46,43 @@ castellatedMeshControls
     {
         turbine
         {
-            level (2 2);
+            level (2 2); // Refine near the inner surface
+            faceType boundary;
+            cellZone turbineInside; // Zone for the inner cavity
+            cellZoneInside pointAndNormal (0 0 0.75 0 0 1); // Normal points outward
         }
     }
 
     refinementRegions
     {
+        // Optional refinement near boundaries
         inlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (0 0 3.4 0 0 1);
+            cellZoneInside pointAndNormal (0 0 1.0 0 0 1); // Near z = 1000 mm
         }
         foreOutlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (-1.0 0 0.75 0 0 1);
+            cellZoneInside pointAndNormal (-0.5 0 0.75 0 0 1); // Near x = -500 mm
         }
         aftOutlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (1.0 0 0.75 0 0 1);
+            cellZoneInside pointAndNormal (0.5 0 0.75 0 0 1); // Near x = 500 mm
         }
     }
 
-    resolveFeatureAngle 30;
-    locationInMesh (0 0 0.75);
-    allowFreeStandingZoneFaces true;
+    locationInMesh (0 0 0.75); // Inside the cavity, within 500 mm radius
+    maxRefinement 3; // Limit refinement to prevent breaching outer limits
+    // Ensure mesh stays within STL bounds
+    minCellSize 0.01; // Minimum cell size in meters (10 mm) to control expansion
 }
 
 snapControls
