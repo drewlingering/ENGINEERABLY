@@ -1,8 +1,8 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  v2312                                |
-|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|  \\    /   O peration     | Version:  12                                    |
+|   \\  /    A nd           | Website:  https://openfoam.org                  |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 FoamFile
@@ -34,11 +34,11 @@ castellatedMeshControls
     maxGlobalCells 2000000;
     minRefinementCells 0;
     maxLoadUnbalance 0.10;
-    nCellsBetweenLevels 2;
+    nCellsBetweenLevels 3;
 
     features
     (
-        { file "turbine.eMesh"; level 2; }
+        { file "turbine.stl"; } // Reference the STL directly for features
     );
 
     refinementSurfaces
@@ -49,30 +49,26 @@ castellatedMeshControls
         }
     }
 
-    // Define regions using coordinate-based boxes
     refinementRegions
     {
         inlet
         {
             mode distance;
-            levels ((0.1 2)); // Refine near inlet
-            // Box around conical top (z > 0.8 * height)
+            levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (0 0 0.9 0 0 1); // Adjust z based on model
+            cellZoneInside pointAndNormal (0 0 0.9 0 0 1); // Adjust z (e.g., 90% height)
         }
         foreOutlet
         {
             mode distance;
-            levels ((0.1 2)); // Refine near fore outlet
-            // Box around forward annular region (x < 0, z ~ 0.2 * height)
+            levels ((0.1 2));
             cellZone inside;
             cellZoneInside pointAndNormal (-0.5 0 0.2 0 0 1); // Adjust x, z
         }
         aftOutlet
         {
             mode distance;
-            levels ((0.1 2)); // Refine near aft outlet
-            // Box around rearward annular region (x > 0, z ~ 0.2 * height)
+            levels ((0.1 2));
             cellZone inside;
             cellZoneInside pointAndNormal (0.5 0 0.2 0 0 1); // Adjust x, z
         }
@@ -81,7 +77,6 @@ castellatedMeshControls
     resolveFeatureAngle 30;
     locationInMesh (0 0 0.5); // Seed inside cavity, adjust based on model height
     allowFreeStandingZoneFaces true;
-    nCellsBetweenLevels 3; // Increase for recursive outward snapping
 }
 
 snapControls
