@@ -63,19 +63,19 @@ castellatedMeshControls
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (-1.0 0 -0.5 0 0 1); // x = -1000 mm, z = -500 mm
+            cellZoneInside pointAndNormal (-1.0 0 0.75 0 0 1); // x = -1000 mm, z = 750 mm
         }
         aftOutlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (1.0 0 -0.5 0 0 1); // x = 1000 mm, z = -500 mm
+            cellZoneInside pointAndNormal (1.0 0 0.75 0 0 1); // x = 1000 mm, z = 750 mm
         }
     }
 
     resolveFeatureAngle 30;
-    locationInMesh (0 0 -0.5); // Seed inside cavity, at torus center (500 mm below origin)
+    locationInMesh (0 0 0.75); // Seed inside cavity, at torus center (750 mm)
     allowFreeStandingZoneFaces true;
 }
 
