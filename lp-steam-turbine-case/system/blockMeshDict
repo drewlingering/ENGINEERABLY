@@ -15,23 +15,23 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-convertToMeters 0.001; // Convert mm to m
+convertToMeters 0.001; // Convert mm to m (all values below are in mm, converted to m)
 
 vertices
 (
-    (-0.5 -0.5 0.5)    // 0: x = -500 mm, y = -500 mm, z = 500 mm
-    (0.5  -0.5 0.5)    // 1: x = 500 mm, y = -500 mm, z = 500 mm
-    (0.5  0.5  0.5)    // 2: x = 500 mm, y = 500 mm, z = 500 mm
-    (-0.5 0.5  0.5)    // 3: x = -500 mm, y = 500 mm, z = 500 mm
-    (-0.5 -0.5 1.0)    // 4: x = -500 mm, y = -500 mm, z = 1000 mm
-    (0.5  -0.5 1.0)    // 5: x = 500 mm, y = -500 mm, z = 1000 mm
-    (0.5  0.5  1.0)    // 6: x = 500 mm, y = 500 mm, z = 1000 mm
-    (-0.5 0.5  1.0)    // 7: x = -500 mm, y = 500 mm, z = 1000 mm
+    (-500 -500 500)    // 0: x = -0.5 m, y = -0.5 m, z = 0.5 m (500 mm)
+    (500  -500 500)    // 1: x = 0.5 m, y = -0.5 m, z = 0.5 m (500 mm)
+    (500  500  500)    // 2: x = 0.5 m, y = 0.5 m, z = 0.5 m (500 mm)
+    (-500 500  500)    // 3: x = -0.5 m, y = 0.5 m, z = 0.5 m (500 mm)
+    (-500 -500 1000)   // 4: x = -0.5 m, y = -0.5 m, z = 1.0 m (1000 mm)
+    (500  -500 1000)   // 5: x = 0.5 m, y = -0.5 m, z = 1.0 m (1000 mm)
+    (500  500  1000)   // 6: x = 0.5 m, y = 0.5 m, z = 1.0 m (1000 mm)
+    (-500 500  1000)   // 7: x = -0.5 m, y = 0.5 m, z = 1.0 m (1000 mm)
 );
 
 blocks
 (
-    hex (0 1 2 3 4 5 6 7) (20 20 20) simpleGrading (1 1 1) // 20x20x20 cells for the cavity
+    hex (0 1 2 3 4 5 6 7) (20 20 10) simpleGrading (1 1 1) // 20x20x10 cells for 1.0x1.0x0.5 m
 );
 
 edges
@@ -45,7 +45,7 @@ boundary
         type patch;
         faces
         (
-            (4 5 6 7) // Top face at z = 1000 mm
+            (4 5 6 7) // Top face at z = 1.0 m (1000 mm)
         );
     }
     outlet
@@ -53,7 +53,7 @@ boundary
         type patch;
         faces
         (
-            (0 3 2 1) // Bottom face at z = 500 mm
+            (0 3 2 1) // Bottom face at z = 0.5 m (500 mm)
         );
     }
     walls
