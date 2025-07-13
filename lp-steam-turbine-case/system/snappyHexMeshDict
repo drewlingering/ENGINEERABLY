@@ -38,7 +38,7 @@ castellatedMeshControls
 
     features
     (
-        { file "turbine.stl"; } // Reference the STL directly for features
+        { file "turbine.stl"; }
     );
 
     refinementSurfaces
@@ -56,26 +56,26 @@ castellatedMeshControls
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (0 0 3.4 0 0 1); // Near z = 3.5 m (3500 mm)
+            cellZoneInside pointAndNormal (0 0 3.4 0 0 1);
         }
         foreOutlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (-1.0 0 0.75 0 0 1); // x = -1000 mm, z = 750 mm
+            cellZoneInside pointAndNormal (-1.0 0 0.75 0 0 1);
         }
         aftOutlet
         {
             mode distance;
             levels ((0.1 2));
             cellZone inside;
-            cellZoneInside pointAndNormal (1.0 0 0.75 0 0 1); // x = 1000 mm, z = 750 mm
+            cellZoneInside pointAndNormal (1.0 0 0.75 0 0 1);
         }
     }
 
     resolveFeatureAngle 30;
-    locationInMesh (0 0 0.75); // Seed inside cavity, at torus center (750 mm)
+    locationInMesh (0 0 0.75);
     allowFreeStandingZoneFaces true;
 }
 
