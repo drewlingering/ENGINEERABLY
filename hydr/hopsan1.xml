@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hopsanmodel>
+<HopsanComponentSystem>
   <components>
     <!-- Signal Sources and Inputs -->
     <component type="SignalSource" name="StartSignal">
@@ -88,4 +88,4 @@
     <connection from="CR1.out" to="Output1.in"/>
     <connection from="CR2.out" to="Output2.in"/>
   </connections>
-</hopsanmodel>
+</HopsanComponentSystem>
