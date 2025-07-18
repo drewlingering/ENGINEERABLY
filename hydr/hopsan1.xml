@@ -58,7 +58,6 @@
     <!-- Output (e.g., CR1 and CR2 Outputs) -->
     <component type="SignalSink" name="Output1"/>
     <component type="SignalSink" name="Output2"/>
-
   </components>
 
   <connections>
