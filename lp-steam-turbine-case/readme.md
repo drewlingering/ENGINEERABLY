@@ -93,3 +93,5 @@ turbineCFD/
 ├── run.sh
 ---
 ├── README.md
+
+N.B. the outlet is a map of empirical data. We'll have to use an approximation...
