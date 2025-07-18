@@ -1,18 +1,15 @@
-<Model name="Hydraulic_Electrical_Circuit" version="2.0">
+<SystemModel name="Hydraulic_Electrical_Circuit" version="2.0">
   <Components>
     <!-- Hydraulic domain -->
     <Component type="AQFixedDisplacementPump" name="Pump">
       <Parameter name="Displacement">10e-6</Parameter>
       <Parameter name="Direction">1</Parameter>
     </Component>
-
     <Component type="HydraulicTank" name="Tank">
       <Parameter name="Pressure">0e5</Parameter>
     </Component>
-
     <Component type="DCValve4_2" name="DCV1" />
     <Component type="DCValve4_2" name="DCV2" />
-
     <Component type="HydraulicCylinder" name="Cylinder1">
       <Parameter name="Area">0.001</Parameter>
       <Parameter name="Stroke">0.1</Parameter>
@@ -23,7 +20,6 @@
     <Component type="SignalSource" name="StartButton">
       <Parameter name="Amplitude">1</Parameter>
     </Component>
-
     <Component type="SignalSwitch" name="LS1" />
     <Component type="SignalSwitch" name="LS2" />
     <Component type="SignalSwitch" name="PS1" />
@@ -38,26 +34,3 @@
   </Components>
 
   <Connections>
-    <!-- Hydraulic connections -->
-    <Connection from="Pump.port1" to="DCV1.P" />
-    <Connection from="DCV1.A" to="Cylinder1.A" />
-    <Connection from="DCV1.B" to="DCV2.A" />
-    <Connection from="DCV2.B" to="Tank.port1" />
-    <Connection from="DCV1.T" to="Tank.port1" />
-    <Connection from="DCV2.P" to="Pump.port2" />
-
-    <!-- Electrical/signal connections -->
-    <Connection from="StartButton.output" to="Relay1.input1" />
-    <Connection from="LS1.output" to="Relay1.input2" />
-    <Connection from="Relay1.output" to="SOL_A_DCV1.input" />
-    <Connection from="LS2.output" to="Relay2.input1" />
-    <Connection from="PS1.output" to="Relay2.input2" />
-    <Connection from="Relay2.output" to="SOL_B_DCV2.input" />
-
-    <!-- Signal-to-actuator mapping -->
-    <Connection from="SOL_A_DCV1.output" to="DCV1.controlA" />
-    <Connection from="SOL_B_DCV1.output" to="DCV1.controlB" />
-    <Connection from="SOL_A_DCV2.output" to="DCV2.controlA" />
-    <Connection from="SOL_B_DCV2.output" to="DCV2.controlB" />
-  </Connections>
-</Model>
