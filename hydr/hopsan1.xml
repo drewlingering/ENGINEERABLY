@@ -30,7 +30,4 @@
     <Component type="SignalToHydraulicValve" name="SOL_A_DCV1" />
     <Component type="SignalToHydraulicValve" name="SOL_B_DCV1" />
     <Component type="SignalToHydraulicValve" name="SOL_A_DCV2" />
-    <Component type="SignalToHydraulicValve" name="SOL_B_DCV2" />
-  </Components>
-
-  <Connections>
+    <Component type="SignalToHydraulicValve" name="SOL
