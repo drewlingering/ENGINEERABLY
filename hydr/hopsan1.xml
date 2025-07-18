@@ -1,35 +1,91 @@
-<SystemModel name="Hydraulic_Electrical_Circuit" version="2.0">
-  <Components>
-    <!-- Hydraulic domain -->
-    <Component type="AQFixedDisplacementPump" name="Pump">
-      <Parameter name="Displacement">10e-6</Parameter>
-      <Parameter name="Direction">1</Parameter>
-    </Component>
-    <Component type="HydraulicTank" name="Tank">
-      <Parameter name="Pressure">0e5</Parameter>
-    </Component>
-    <Component type="DCValve4_2" name="DCV1" />
-    <Component type="DCValve4_2" name="DCV2" />
-    <Component type="HydraulicCylinder" name="Cylinder1">
-      <Parameter name="Area">0.001</Parameter>
-      <Parameter name="Stroke">0.1</Parameter>
-      <Parameter name="Mass">2</Parameter>
-    </Component>
+<?xml version="1.0" encoding="UTF-8"?>
+<hopsanmodel>
+  <components>
+    <!-- Signal Sources and Inputs -->
+    <component type="SignalSource" name="StartSignal">
+      <parameter name="value" value="1.0"/>
+    </component>
 
-    <!-- Electrical domain -->
-    <Component type="SignalSource" name="StartButton">
-      <Parameter name="Amplitude">1</Parameter>
-    </Component>
-    <Component type="SignalSwitch" name="LS1" />
-    <Component type="SignalSwitch" name="LS2" />
-    <Component type="SignalSwitch" name="PS1" />
-    <Component type="LogicAND" name="Relay1" />
-    <Component type="LogicOR" name="Relay2" />
+    <!-- Sensors (Level Switches and Pressure Switch) -->
+    <component type="SignalSensor" name="LS1">
+      <parameter name="value" value="0.0"/>
+    </component>
+    <component type="SignalSensor" name="LS2">
+      <parameter name="value" value="0.0"/>
+    </component>
+    <component type="SignalSensor" name="LS3">
+      <parameter name="value" value="0.0"/>
+    </component>
+    <component type="SignalSensor" name="LS4">
+      <parameter name="value" value="0.0"/>
+    </component>
+    <component type="SignalSensor" name="PS1">
+      <parameter name="value" value="0.0"/>
+    </component>
 
-    <!-- Signal to hydraulic converters -->
-    <Component type="SignalToHydraulicValve" name="SOL_A_DCV1" />
-    <Component type="SignalToHydraulicValve" name="SOL_B_DCV1" />
-    <Component type="SignalToHydraulicValve" name="SOL_A_DCV2" />
-    <Component type="SignalToHydraulicValve" name="SOL
-</SystemModel>
+    <!-- Relays (CR1, CR2) -->
+    <component type="SignalRelay" name="CR1">
+      <parameter name="threshold" value="1.0"/>
+    </component>
+    <component type="SignalRelay" name="CR2">
+      <parameter name="threshold" value="1.0"/>
+    </component>
 
+    <!-- Timer (CRA) -->
+    <component type="SignalTimer" name="CRA">
+      <parameter name="timeConstant" value="10.0"/>
+    </component>
+
+    <!-- Solenoid Valves (SOLA, SOLB, SOLC, etc.) -->
+    <component type="HydraulicValve" name="SOLA">
+      <parameter name="open" value="0.0"/>
+    </component>
+    <component type="HydraulicValve" name="SOLB">
+      <parameter name="open" value="0.0"/>
+    </component>
+    <component type="HydraulicValve" name="SOLC">
+      <parameter name="open" value="0.0"/>
+    </component>
+
+    <!-- Hydraulic Components (Pipes, Tanks, etc.) -->
+    <component type="HydraulicTank" name="Tank">
+      <parameter name="pressure" value="0.0"/>
+    </component>
+    <component type="HydraulicPipe" name="Pipe1">
+      <parameter name="length" value="1.0"/>
+    </component>
+
+    <!-- Output (e.g., CR1 and CR2 Outputs) -->
+    <component type="SignalSink" name="Output1"/>
+    <component type="SignalSink" name="Output2"/>
+
+  </components>
+
+  <connections>
+    <!-- Connect Start Signal to CR1 -->
+    <connection from="StartSignal.out" to="CR1.in"/>
+
+    <!-- Connect Sensors to CR1 and CR2 -->
+    <connection from="LS1.out" to="CR1.in2"/>
+    <connection from="LS2.out" to="CR1.in3"/>
+    <connection from="LS3.out" to="CR2.in2"/>
+    <connection from="LS4.out" to="CR2.in3"/>
+    <connection from="PS1.out" to="CRA.in"/>
+
+    <!-- Connect CRA to CR1 -->
+    <connection from="CRA.out" to="CR1.in4"/>
+
+    <!-- Connect CR1 and CR2 to Solenoid Valves -->
+    <connection from="CR1.out" to="SOLA.control"/>
+    <connection from="CR1.out" to="SOLB.control"/>
+    <connection from="CR2.out" to="SOLC.control"/>
+
+    <!-- Connect Hydraulic Components -->
+    <connection from="Tank.out" to="Pipe1.in"/>
+    <connection from="Pipe1.out" to="SOLA.in"/>
+
+    <!-- Connect Outputs -->
+    <connection from="CR1.out" to="Output1.in"/>
+    <connection from="CR2.out" to="Output2.in"/>
+  </connections>
+</hopsanmodel>
