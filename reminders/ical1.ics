@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//YourReminder//EN
+BEGIN:VEVENT
+UID:cfdr7-2025@yourdomain.com
+DTSTAMP:20250729T090000Z
+DTSTART:20250729T090000Z
+SUMMARY:CfD Allocation Round 7 Opens
+DESCRIPTION:Reminder to check Contracts for Difference Allocation Round 7 details. Bidding expected to open between 7–27 August. Review eligibility and submission portal.
+LOCATION:UK Gov Energy Portal
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
