@@ -1,1 +1,9 @@
+title: "mathjax"
+description: "Taylor and Maclaurin expansions rendered with MathJax"
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  math_engine_opts:
+    preview: false
+theme: minima
 
