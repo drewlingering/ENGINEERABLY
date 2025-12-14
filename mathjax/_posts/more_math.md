@@ -1,64 +1,99 @@
 ---
 layout: default
-title: "Taylor Series Expansions — Chart 2"
+title: "Algebraic Identities"
 ---
 
 $$
-\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \frac{x^9}{9!} - \cdots
+(a + b)^2 = a^2 + 2ab + b^2
 $$
 
 $$
-\cos(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \frac{x^8}{8!} - \cdots
+(a - b)^2 = a^2 - 2ab + b^2
 $$
 
 $$
-\tan^{-1}(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \frac{x^9}{9} - \cdots
+a^2 + b^2 = (a + b)^2 - 2ab
 $$
 
 $$
-\tanh(x) = x - \frac{x^3}{3} + \frac{2x^5}{15} - \frac{17x^7}{315} + \cdots
+a^2 - b^2 = (a + b)(a - b)
 $$
 
 $$
-\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \frac{x^5}{5} - \cdots
+(a + b)^2 = (a - b)^2 + 4ab
 $$
 
 $$
-\ln\left(\frac{1+x}{1-x}\right) = 2x + \frac{2x^3}{3} + \frac{2x^5}{5} + \frac{2x^7}{7} + \cdots
+(a - b)^2 = (a + b)^2 - 4ab
 $$
 
 $$
-\frac{1}{1-x} = 1 + x + x^2 + x^3 + x^4 + \cdots
+a^2 + b^2 = (a - b)^2 + 2ab
 $$
 
 $$
-\frac{1}{(1-x)^2} = 1 + 2x + 3x^2 + 4x^3 + 5x^4 + \cdots
+2(a^2 + b^2) = (a + b)^2 + (a - b)^2
 $$
 
 $$
-e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots
+4ab = (a + b)^2 - (a - b)^2
 $$
 
 $$
-\sinh(x) = x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdots
+(a + b)^2 - (a - b)^2 = 4ab
 $$
 
 $$
-\cosh(x) = 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdots
+(a + b)^2 + (a - b)^2 = 2(a^2 + b^2)
 $$
 
 $$
-\frac{1}{1+x^2} = 1 - x^2 + x^4 - x^6 + x^8 - \cdots
+(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca)
 $$
 
 $$
-\frac{1}{\sqrt{1-x}} = 1 + \frac{1}{2}x + \frac{3}{8}x^2 + \frac{5}{16}x^3 + \cdots
+(a + b - c)^2 = a^2 + b^2 + c^2 + 2(ab - bc - ca)
 $$
 
 $$
-\sqrt{1+x} = 1 + \frac{1}{2}x - \frac{1}{8}x^2 + \frac{1}{16}x^3 - \cdots
+(a - b + c)^2 = a^2 + b^2 + c^2 - 2(ab - bc + ca)
 $$
 
 $$
-(1+x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-1)(n-2)}{3!}x^3 + \cdots
+(a - b - c)^2 = a^2 + b^2 + c^2 - 2(ab + bc + ca)
 $$
+
+$$
+a^3 + b^3 = (a + b)(a^2 - ab + b^2)
+$$
+
+$$
+a^3 - b^3 = (a - b)(a^2 + ab + b^2)
+$$
+
+$$
+a^3 + b^3 = (a + b)^3 - 3ab(a + b)
+$$
+
+$$
+a^3 - b^3 = (a - b)^3 + 3ab(a - b)
+$$
+
+$$
+(x + a)(x + b) = x^2 + x(a + b) + ab
+$$
+
+$$
+(x - a)(x - b) = x^2 - x(a + b) + ab
+$$
+
+$$
+(x + a)(x - b) = x^2 + x(a - b) - ab
+$$
+
+$$
+(x - a)(x + b) = x^2 + x(b - a) - ab
+$$
+
+$$
+(a + b + c)^
