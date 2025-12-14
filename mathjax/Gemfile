@@ -1,3 +1,4 @@
+ruby -v
 gem install bundler
 gem install jekyll
 bundle install
