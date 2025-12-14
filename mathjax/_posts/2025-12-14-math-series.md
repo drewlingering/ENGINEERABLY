@@ -17,9 +17,6 @@ $$
 1 + x \ln(a) + \frac{(x \ln a)^2}{2!} + \frac{(x \ln a)^3}{3!} + \cdots
 $$
 
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 
 
 
@@ -90,10 +87,7 @@ $$
 x + \frac{1}{2}x^2 + \frac{1}{6}x^3 + \frac{1}{24}x^4 + \cdots
 $$
 
----
-layout: default
-title: "Taylor Series Expansions"
----
+
 
 $$
 \arcsin(x) = x + \frac{x^3}{6} + \frac{3x^5}{40} + \frac{5x^7}{112} + \cdots
