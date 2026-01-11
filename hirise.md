@@ -136,10 +136,14 @@ The tower‑boat projects a **minimalist, monolithic silhouette**: a slender pin
 - The small footprint reduces mooring and infrastructure demands.
 
 ---
-
-### Implementation notes (for future docs)
+<!--
+This code or text is hidden from the page.
+It will still be visible in the raw .md file on GitHub.### Implementation notes (for future docs)
 
 - Replace the image placeholder at the top with a proper render or photo.  
 - Add a separate page for **mass budgets, ballast calculations, and stability curves** if you turn this into an engineering series.  
-- Consider a follow‑up page for **regulatory constraints** (navigation, mooring, building codes, and classification rules for floating structures).
+- Consider a follow‑up page for **regulatory constraints** (navigation, mooring, building codes, and classification rules for floating structures). 
+-->
+
+### by DREWLINGERING
 
