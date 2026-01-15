@@ -1,27 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
+---
+layout: default
+---
 
-  <!-- Your stylesheet -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
+<!-- Your logo -->
+<a href="{{ '/' | relative_url }}">
+  <img src="{{ '/assets/images/dino-logo.png' | relative_url }}" 
+       alt="Logo" 
+       style="height:40px; margin:10px;">
+</a>
 
-<body>
-
-  <!-- Your logo -->
-  <a href="{{ '/' | relative_url }}">
-    <img src="{{ '/assets/images/dino-logo.png' | relative_url }}" 
-         alt="Logo" 
-         style="height:40px; margin:10px;">
-  </a>
-
-  <!-- Page content -->
-  <main>
-    {{ content }}
-  </main>
-
-</body>
-</html>
+{{ content }}
