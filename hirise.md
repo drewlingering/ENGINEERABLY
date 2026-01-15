@@ -5,6 +5,7 @@ permalink: /vertical-tower-boat/
 ---
 
 ![Vertical tower‑boat concept placeholder](/Copilot_20260111_005117.png)
+![Shipping container tower‑boat concept placeholder](/Copilot_20260114_135014.png)
 
 > **Hi-rise Liveaboard:** Ballasted four-storey shanty houseboat idea, inspired by the science platform Scripps Inst..
 
