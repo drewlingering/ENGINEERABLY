@@ -127,20 +127,10 @@ This page curates channels and sources that focus on **operational, engineeringâ
 ---
 # Artemis II Technical Vlog Channels â€” Direct Links (search Artemis II within channel)
 
-- NASA Spaceflight (NSF)  
-  https://www.youtube.com/@NASASpaceflight
+<https://www.youtube.com/@NASASpaceflight>
+<https://www.youtube.com/@EverydayAstronaut>
+<https://www.youtube.com/@MarcusHouse>
+<https://www.youtube.com/@scottmanley>
+<https://www.youtube.com/@DigitalAstronaut>
+<https://www.youtube.com/@NASAArtemis>
 
-- Everyday Astronaut  
-  https://www.youtube.com/@EverydayAstronaut
-
-- Marcus House  
-  https://www.youtube.com/@MarcusHouse
-
-- Scott Manley  
-  https://www.youtube.com/@scottmanley
-
-- Digital Astronaut  
-  https://www.youtube.com/@DigitalAstronaut
-
-- NASA Artemis (Official)  
-  https://www.youtube.com/@NASAArtemis
