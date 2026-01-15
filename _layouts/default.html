@@ -1,6 +1,17 @@
-<img src="{{ '/assets/images/dino-logo.png' | relative_url }}" alt="Site Logo" class="logo">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
 
-<a href="{{ '/' | relative_url }}">
-  <img src="{{ '/assets/images/dino-logo.png' | relative_url }}" alt="Site Logo" style="height:40px; margin:10px;">
-</a>
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <a href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/images/dino-logo.png' | relative_url }}" alt="Logo" style="height:40px; margin:10px;">
+  </a>
+
+  {{ content }}
+
+</body>
+</html>
