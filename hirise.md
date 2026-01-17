@@ -1,5 +1,5 @@
 ---
-layout: minima
+layout: default
 title: "Vertical Micro‑Footprint Liveaboard Tower‑Boat"
 permalink: /vertical-tower-boat/
 ---
