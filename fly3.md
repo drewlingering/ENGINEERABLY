@@ -36,9 +36,5 @@ description: "Continuation of the indexed list of aircraft concepts featured in 
 | 44 | Wisk Aero Gen-6           | Autonomous 4-seat air taxi              | [Link](https://wisk.aero/) |
 """
 
-# Write to file
-with open(output_path, "w") as f:
-    f.write(markdown_content)
 
-print("Markdown file 'aircraft_catalog_part2.md' created with entries 21–44.")
 
