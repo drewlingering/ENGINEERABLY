@@ -1,4 +1,4 @@
-"---
+---
 layout: post
 title: "Revolutionary Aircraft Concepts of the Future – Catalog Part 2"
 date: 2026-01-18
