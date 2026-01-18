@@ -30,4 +30,4 @@ description: "Catalog of aircraft featured in the YouTube video 'REVOLUTIONARY A
 | 18 | Black Horse PC-21 RF         | RC Turboprop Trainer        | [motionrc.com](https://www.motionrc.com/products/black-horse-pilatus-pc-21-1962mm-77-2-wingspan-arf-bhm1023-001) |
 | 19 | E-Flight GBR-2               | RC Racing Aircraft          | [horizonhobby.com](https://www.horizonhobby.com/e-flite/) |
 | 20 | Black Horse Viper Jet        | RC Turbine Jet              | [motionrc.com](https://www.motionrc.com/products/black-horse-viper-jet-turbine-2000mm-78-7-wingspan-arf-bhm1008-001) |
-"""
+---
