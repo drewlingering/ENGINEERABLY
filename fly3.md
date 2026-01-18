@@ -34,7 +34,7 @@ description: "Continuation of the indexed list of aircraft concepts featured in 
 | 42 | Cirrus NEXT Program       | Aircraft upgrade ecosystem              | [Link](https://cirrusaircraft.com/next/) |
 | 43 | Air One                   | Israeli 2-seat eVTOL                    | [Link](https://www.airev.aero/) |
 | 44 | Wisk Aero Gen-6           | Autonomous 4-seat air taxi              | [Link](https://wisk.aero/) |
-"""
+---
 
 
 
