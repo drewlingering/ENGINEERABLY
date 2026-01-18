@@ -5,7 +5,7 @@ date: 2026-01-18
 categories: [aviation, concepts, catalog]
 description: "Continuation of the indexed list of aircraft concepts featured in the YouTube compilation 'REVOLUTIONARY AIRCRAFT CONCEPTS OF THE FUTURE'."
 ---
-
+---
 ## Aircraft Catalog (Entries 21–44)
 
 | #  | Aircraft Name             | Type / Role                             | Official Link |
