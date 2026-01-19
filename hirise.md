@@ -146,5 +146,4 @@ It will still be visible in the raw .md file on GitHub.### Implementation notes 
 - Consider a follow‑up page for **regulatory constraints** (navigation, mooring, building codes, and classification rules for floating structures). 
 -->
 
-### by DREWLINGERING
-
+>### <img src="/Copilot_20260115_181318.png" width="20">    by DREWLINGERING  
