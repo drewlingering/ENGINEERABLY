@@ -1,40 +1,36 @@
 ---
 layout: default
-title: "Revolutionary Aircraft Concepts of the Future – Catalog Part 2"
-date: 2026-01-18
-categories: [aviation, concepts, catalog]
-description: "Continuation of the indexed list of aircraft concepts featured in the YouTube compilation 'REVOLUTIONARY AIRCRAFT CONCEPTS OF THE FUTURE'."
----
----
-## Aircraft Catalog (Entries 21–44)
-
-| #  | Aircraft Name             | Type / Role                             | Official Link |
-|----|---------------------------|------------------------------------------|----------------|
-| 21 | UMX 3DFF                  | Micro aerobatic RC plane                | [Link](https://www.horizonhobby.com/product/umx-pt-17-eflite-eflu30850/) |
-| 22 | E-Flight Micro Scrappy    | RC bush plane                           | [Link](https://www.horizonhobby.com/product/micro-scrappy-umx-eflite/) |
-| 23 | UMX Viper 30mm EDF        | Micro electric ducted fan jet           | [Link](https://www.horizonhobby.com/product/umx-viper-30mm-edf-bnf-basic-with-as3x-and-safe-select-eflu6450/) |
-| 24 | E-Flight Airbus A320neo   | RC airliner with retracts               | [Link](https://www.horizonhobby.com/product/e-flite-a320-airbus-neo-rc/) |
-| 25 | Freewing Zeus 45NT        | Turbine-ready sport RC jet              | [Link](https://www.motionrc.com/products/freewing-zeus-90mm-edf-jet/) |
-| 26 | FMS 800mm Beaver          | Beginner RC bush plane                  | [Link](https://www.fmsmodel.com/fms-800mm-beaver/) |
-| 27 | SubSonex JSX-1            | Single-seat homebuilt jet               | [Link](https://www.sonexaircraft.com/subsonex/) |
-| 28 | BD-5                      | Microjet/piston kit plane               | [Link](https://bd-micro.com/) |
-| 29 | OpenSky M02J              | Hybrid jet-glider                       | [Link](https://www.opensky.jp/) |
-| 30 | Cree MC-15                | Smallest twin-engine aircraft           | [Link](https://www.cree.fr/english/mc15.html) |
-| 31 | Archopterix Electro       | Electric-assisted ultralight glider     | [Link](https://www.archaeopteryx.ch/) |
-| 32 | Equator P2 Excursion      | Long-range motor-glider                 | [Link](https://www.equatoraircraft.com/) |
-| 33 | J6 Forata                 | Compact Czech motor-glider              | [Link](https://www.j6forata.cz/) |
-| 34 | Clasarov Acro             | Cycloidal-rotor aerobatic aircraft      | [Link](https://www.clasarov.com/) |
-| 35 | CycloTech CruiseUp        | Vectored-thrust barrel-rotor aircraft   | [Link](https://www.cyclotech.at/) |
-| 36 | Dyke Delta JD-2           | Homebuilt delta-wing 4-seater           | [Link](https://dykeair.com/) |
-| 37 | Star Bumblebee II         | Smallest airplane ever flown            | [Link](https://www.fiddlersgreen.net/models/aircraft/Starr-Bumble-Bee.html) |
-| 38 | Baker Supercat            | Ultralight biplane                      | [Link](https://www.homebuiltairplanes.com/forums/threads/baker-supercat.12345/) |
-| 39 | Leo Flight Jet Bike       | Jet-powered motorcycle flyer            | [Link](https://www.leoflight.com/) |
-| 40 | Cirrus Vision Jet G2+     | Smallest certified private jet          | [Link](https://cirrusaircraft.com/aircraft/vision-jet/) |
-| 41 | Phantom 3500              | Concept business jet with virtual windows | [Link](https://www.phantom-aircraft.com/) |
-| 42 | Cirrus NEXT Program       | Aircraft upgrade ecosystem              | [Link](https://cirrusaircraft.com/next/) |
-| 43 | Air One                   | Israeli 2-seat eVTOL                    | [Link](https://www.airev.aero/) |
-| 44 | Wisk Aero Gen-6           | Autonomous 4-seat air taxi              | [Link](https://wisk.aero/) |
+title: "ENGINEERABLY Aircraft Catalog (Entries 21–44)"
+permalink: /fly3/
+categories: [aviation, catalog]
+description: "Aircraft entries 21–44 from the ENGINEERABLY catalog."
 ---
 
+# ENGINEERABLY Aircraft Catalog (Entries 21–44)
 
-
+| #  | Aircraft Name | Type / Role | Official Link |
+|----|---------------|-------------|----------------|
+| 21 | UMX 3DFF | Micro aerobatic RC plane | https://www.horizonhobby.com/product/umx-3d-ff |
+| 22 | DJI Mavic 3 | Camera drone | https://www.dji.com/mavic-3 |
+| 23 | DJI Avata | FPV drone | https://www.dji.com/avata |
+| 24 | Autel EVO Lite+ | Camera drone | https://auteldrones.com/products/evo-lite |
+| 25 | Parrot Anafi | Folding camera drone | https://www.parrot.com/en/anafi |
+| 26 | EHang 216 | Autonomous passenger eVTOL | https://www.ehang.com/ehang216 |
+| 27 | Joby S4 | eVTOL air taxi | https://www.jobyaviation.com/aircraft/ |
+| 28 | Archer Midnight | eVTOL air taxi | https://www.archer.com/midnight |
+| 29 | Lilium Jet | eVTOL regional jet | https://lilium.com/jet |
+| 30 | Vertical Aerospace VX4 | eVTOL | https://vertical-aerospace.com/vx4 |
+| 31 | Pipistrel Velis Electro | Electric trainer aircraft | https://www.pipistrel-aircraft.com/aircraft/electric-flight/velis-electro/ |
+| 32 | Bye Aerospace eFlyer 2 | Electric trainer | https://byeaerospace.com/eflyer-2/ |
+| 33 | Airbus ZEROe | Hydrogen concept aircraft | https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe |
+| 34 | Boeing Transonic Truss‑Braced Wing | Experimental concept | https://www.nasa.gov/aeronautics/nasa-boeing-ttbw/ |
+| 35 | NASA X‑59 QueSST | Low‑boom supersonic demonstrator | https://www.nasa.gov/aeronautics/x-59/ |
+| 36 | NASA X‑57 Maxwell | Electric propulsion demonstrator | https://www.nasa.gov/aeronautics/x-57/ |
+| 37 | Lockheed Martin SR‑72 | Hypersonic concept | https://www.lockheedmartin.com/en-us/news/features/2018/sr-72.html |
+| 38 | Boom Overture | Supersonic airliner | https://boomsupersonic.com/overture |
+| 39 | Aerion AS2 | Supersonic business jet (cancelled) | https://aerionsupersonic.com/as2/ |
+| 40 | Stratolaunch Roc | Twin‑fuselage carrier aircraft | https://www.stratolaunch.com/ |
+| 41 | Scaled Composites Proteus | High‑altitude research aircraft | https://www.scaled.com/aircraft/proteus/ |
+| 42 | Scaled Composites White Knight Two | Carrier aircraft | https://www.virgingalactic.com/ |
+| 43 | Virgin Galactic SpaceShipTwo | Suborbital spaceplane | https://www.virgingalactic.com/ |
+| 44 | SpaceX Starship | Orbital spacecraft | https://www.spacex.com/vehicles/starship/ |
