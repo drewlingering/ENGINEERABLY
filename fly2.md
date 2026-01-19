@@ -30,3 +30,5 @@ description: "Aircraft entries 1–20 from the ENGINEERABLY catalog."
 | 18 | Sikorsky UH‑60 Black Hawk | Utility helicopter | <https://www.lockheedmartin.com/en-us/products/uh-60-black-hawk.html> |
 | 19 | Airbus H145 | Light twin helicopter | <https://www.airbus.com/en/products-services/helicopters/civil-helicopters/h145> |
 | 20 | Boeing CH‑47 Chinook | Heavy‑lift helicopter | <https://www.boeing.com/defense/ch-47-chinook/> |
+
+>### <img src="/Copilot_20260115_181318.png" width="20">    by DREWLINGERING 
