@@ -34,3 +34,5 @@ description: "Aircraft entries 21–44 from the ENGINEERABLY catalog."
 | 42 | Scaled Composites White Knight Two | Carrier aircraft | <https://www.virgingalactic.com/> |
 | 43 | Virgin Galactic SpaceShipTwo | Suborbital spaceplane | <https://www.virgingalactic.com/> |
 | 44 | SpaceX Starship | Orbital spacecraft | <https://www.spacex.com/vehicles/starship/> |
+
+><img src="/Copilot_20260115_181318.png" width="20">   ###  by DREWLINGERING 
