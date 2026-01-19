@@ -134,3 +134,4 @@ This page curates channels and sources that focus on **operational, engineeringâ
 <https://www.youtube.com/@DigitalAstronaut>
 <https://www.youtube.com/@NASAArtemis>
 
+>### <img src="/Copilot_20260115_181318.png" width="20">    by DREWLINGERING 
