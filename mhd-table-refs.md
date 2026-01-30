@@ -60,3 +60,205 @@
 | Fuel form factor         | Able to accept chips, pellets, briquettes, semi‑solid blocks, and viscous feeds (with pre‑conditioning) | “Supports a wide range of biomass formats from pellets to semi‑solid residues.”        |
 | Emissions control        | Conceptual provision for particulate reduction and cleaner stack (baffles, filters, scrubber options)   | “Compatible with add‑on flue‑gas cleaning modules for stricter air‑quality regimes.”   |
 | Control philosophy       | Focus on stability and tolerance rather than razor‑edge efficiency for a single fuel                    | “Optimised for robustness and fuel flexibility over single‑fuel peak efficiency.”      |
+---
+---
+layout: page
+title: "Korean Research on MHD Dynamos and Thermochemical Water Splitting"
+permalink: /korea-mhd-twsc/
+---
+
+## Overview
+
+This report summarizes what is publicly visible about **South Korean** and **North Korean** activity in:
+
+- **Magnetohydrodynamic (MHD) dynamos for power generation**
+- **Thermochemical water splitting cycles (TWSC) for hydrogen production**
+
+Direct, applied programs in these exact configurations (MHD power plants or closed-loop TWSC + MHD systems) are **not** evident in open literature. However, South Korea is active in **adjacent enabling fields**:
+
+- High-temperature hydrogen production (solar thermochemical, solid oxide, high-temperature electrolysis)
+- Plasma physics and MHD (for fusion, astrophysics, and propulsion)
+- Advanced hydrogen infrastructure and national hydrogen strategy
+
+North Korea has **no verifiable, detailed public record** of MHD or TWSC programs; only generic references to nuclear, thermal, and hydro power.
+
+---
+
+## South Korea: MHD dynamos for power generation
+
+### Status summary
+
+- **No evidence** of a current, large-scale **MHD power generation program** (à la 1960s–1980s coal MHD projects).
+- MHD in South Korea appears mainly in:
+  - **Fusion and plasma confinement**
+  - **Astrophysical and space plasma modeling**
+  - **Electric propulsion and plasma thrusters**
+
+### Representative research areas
+
+**1. Plasma and MHD in fusion devices**
+
+- Work on **MHD stability, plasma instabilities, and magnetized flows** in support of fusion research.
+- Institutions:
+  - **National Fusion Research Institute (NFRI)** – operates KSTAR  
+    - [https://www.nfri.re.kr](https://www.nfri.re.kr)
+  - **KAIST** (Korea Advanced Institute of Science and Technology) – nuclear and plasma engineering  
+    - [https://www.kaist.ac.kr](https://www.kaist.ac.kr)
+  - **Seoul National University (SNU)** – plasma physics and computational MHD  
+    - [https://en.snu.ac.kr](https://en.snu.ac.kr)
+
+These efforts use MHD **as a modeling and stability tool**, not as a stand‑alone power‑generation dynamo.
+
+**2. Space and astrophysical MHD**
+
+- Numerical and theoretical work on:
+  - Solar/stellar winds
+  - Magnetized accretion flows
+  - Space plasma interactions
+- Typical venues:
+  - Journals like *Physics of Plasmas*, *Astrophysical Journal*, *Journal of Korean Physical Society*.
+
+Again, this is **MHD as physics**, not as an engineered dynamo for grid power.
+
+**3. Electric propulsion and plasma thrusters**
+
+- Research on:
+  - Hall thrusters
+  - Ion thrusters
+  - Plasma accelerators
+
+These involve **electromagnetically driven plasmas**, but not closed‑cycle MHD generators for terrestrial power.
+
+---
+
+## South Korea: Thermochemical water splitting (TWSC) and high‑temperature hydrogen
+
+### Status summary
+
+South Korea is **actively pursuing high‑temperature hydrogen production**, including:
+
+- **Solar thermochemical cycles**
+- **High‑temperature electrolysis (SOEC)**
+- **Nuclear‑assisted hydrogen production**
+
+While not always labeled explicitly as “TWSC,” many projects are **functionally thermochemical water splitting** or hybrid thermochemical–electrochemical systems.
+
+### Key institutions
+
+- **Korea Institute of Energy Research (KIER)**  
+  Hydrogen, solar thermochemical, and high‑temperature processes.  
+  [https://www.kier.re.kr](https://www.kier.re.kr)
+
+- **KAIST** – Nuclear & Quantum Engineering, Mechanical Engineering  
+  Work on high‑temperature reactors, hydrogen production cycles, and advanced energy systems.  
+  [https://www.kaist.ac.kr](https://www.kaist.ac.kr)
+
+- **POSTECH (Pohang University of Science and Technology)**  
+  Materials for high‑temperature reactors, solid oxide cells, and hydrogen systems.  
+  [https://www.postech.ac.kr](https://www.postech.ac.kr)
+
+- **Korea Atomic Energy Research Institute (KAERI)**  
+  Nuclear‑assisted hydrogen production, high‑temperature reactors.  
+  [https://www.kaeri.re.kr](https://www.kaeri.re.kr)
+
+### Representative research directions
+
+**1. Solar thermochemical hydrogen production**
+
+- Focus on:
+  - High‑temperature **redox cycles** (metal oxides)
+  - Solar concentrators and receivers
+  - Materials stability at 1000–1500 °C
+
+Typical themes:
+- Two‑step metal oxide cycles (e.g., ceria‑based)
+- Integration with solar towers or high‑flux solar simulators
+
+Search terms that surface Korean work:
+- “Korea solar thermochemical hydrogen”
+- “KIER thermochemical water splitting”
+- “KAIST high temperature hydrogen production”
+
+**2. Nuclear‑assisted thermochemical cycles**
+
+- Conceptual and experimental work on:
+  - **Sulfur–iodine (S–I) cycle**
+  - **Hybrid sulfur cycles**
+  - High‑temperature reactors (HTGR/VHTR) as heat sources
+
+KAERI and KAIST have published on:
+- Coupling **VHTR** concepts with S–I or hybrid cycles for hydrogen production.
+
+**3. High‑temperature electrolysis and SOEC**
+
+- Solid oxide electrolysis cells (SOEC) for:
+  - High‑efficiency hydrogen production
+  - Integration with nuclear or renewable heat
+
+POSTECH, KAIST, and KIER are active in:
+- SOEC materials
+- Stack design
+- System integration
+
+**4. National hydrogen strategy**
+
+South Korea has a **national hydrogen roadmap**, emphasizing:
+
+- Large‑scale hydrogen production (blue, green, and potentially nuclear‑assisted)
+- Hydrogen infrastructure and fuel‑cell deployment
+- Export and industrial decarbonization
+
+See:
+- [https://www.hydrogen.or.kr](https://www.hydrogen.or.kr) (Korean Hydrogen Industry Association – Korean language)
+- Government policy summaries via:
+  - [https://english.moef.go.kr](https://english.moef.go.kr)
+  - [https://english.motie.go.kr](https://english.motie.go.kr)
+
+---
+
+## North Korea: MHD dynamos and TWSC
+
+### Status summary
+
+- There is **no reliable, detailed public evidence** that North Korea is pursuing:
+  - MHD dynamos for power generation, or
+  - Thermochemical water splitting cycles for hydrogen production.
+
+Most open‑source information on North Korea’s energy system focuses on:
+
+- Conventional **thermal power plants** (coal, oil)
+- **Hydropower**
+- Limited **nuclear** capability (Yongbyon) for weapons and possibly some power
+- Chronic **electricity shortages**
+
+### Likely constraints
+
+- Limited access to:
+  - High‑temperature materials
+  - Advanced instrumentation
+  - International collaboration
+- Strong focus on:
+  - Military nuclear program
+  - Basic grid reliability
+
+Any advanced MHD or TWSC work, if it exists, would almost certainly be **classified and not visible** in open literature.
+
+
+
+---
+
+## Suggested search strings for deeper digging
+
+If you want to chase specific papers, patents, or people, these search strings work well in scholarly databases and patent search:
+
+- `"thermochemical water splitting" Korea`
+- `"solar thermochemical hydrogen" KIER`
+- `"sulfur iodine cycle" KAERI`
+- `"high temperature hydrogen production" KAIST`
+- `"solid oxide electrolysis" POSTECH Korea`
+- `"magnetohydrodynamic" KSTAR Korea`
+- `"MHD stability" KSTAR NFRI`
+
+These will surface **actual names, projects, and publications** you can then map into your own documentation or proposal.
+
+---
