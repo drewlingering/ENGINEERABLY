@@ -544,6 +544,10 @@ Ammonia is **not** a perfect carrier — it carries an unavoidable thermodynamic
 
 If you want, I can also add a compact `README.md` version for a GitHub repo, or produce a small `data/` JSON file with the numerical assumptions used for sensitivity modelling.
 
+## ERRATA — Clarification on Fuel‑Cell vs Battery‑Electric Parity
+
+A critical clarification is required regarding the earlier discussion of system‑level efficiency. **Fuel‑cell vehicles do not achieve parity with battery‑electric vehicles because the upstream hydrogen chain is more efficient — they achieve parity because the *vehicle powertrain itself* is highly efficient, and this partially compensates for upstream losses.** A modern fuel‑cell drivetrain typically delivers **45–60% tank‑to‑wheel efficiency**, which is substantially higher than combustion engines and closer to BEVs than most people assume. When hydrogen is produced from fossil sources (SMR, ATR, pyrolysis) rather than electrolysis, the upstream losses are significantly lower than in “green hydrogen” pathways. As a result, the *combined* well‑to‑wheel efficiency of a fuel‑cell vehicle running on grey/blue hydrogen can fall into the **30–40%** band — which is **comparable to a BEV charged from a fossil‑dominated grid**, whose well‑to‑wheel efficiency is typically **~40–45%** once generation, transmission, charging, and battery losses are included. This parity arises from the **high intrinsic efficiency of the fuel‑cell electric powertrain**, not from hydrogen production or storage being efficient. It is essential that readers understand this distinction so the comparison is not misinterpreted: **fuel‑cell vehicles compensate for upstream inefficiency with a very efficient electric drivetrain**, whereas **BEVs compensate for grid losses with extremely efficient energy storage**. Neither architecture is inherently superior in all contexts; the determining factors are upstream energy source, logistics, and use‑case constraints.
+
 ---
 ## Appendix: Browser Context Metadata (Literal)
 
