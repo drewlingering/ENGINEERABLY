@@ -458,6 +458,93 @@ _Global primary energy use ≈ 15 billion toe/year_
 
 - Add methane hydrates  
 ---
+---
+title: "Executive Summary — Hydrogen Carriers and Ammonia Logistics"
+layout: post
+tags: [hydrogen, ammonia, logistics, energy, executive-summary]
+date: 2026-02-15
+edge_all_open_tabs: >
+---
+
+# Executive Summary
+
+**Bottom line:** From an oilfield **well → delivered fuel** perspective, **ammonia (NH₃)** is the cheapest and most practical bulk carrier for hydrogen logistics, while **compressed hydrogen (350–700 bar)** remains the most energy‑efficient carrier. **Liquid hydrogen (LH₂)** is the worst performer on both cost and energy. With realistic technological advances — improved upstream H₂ production (pyrolysis/advanced SMR), ruthenium‑grade catalysts for synthesis and cracking, and higher‑efficiency fuel cells — **ammonia can approach parity with compressed H₂ on a well‑to‑wheel basis** and will likely remain the lowest delivered‑cost option. **Safety and regulation** (toxicity, siting, public acceptance) are the primary non‑technical risks that could erode ammonia’s advantage.
+
+> “To compress hydrogen from atmospheric pressure to 700 bar requires: ≈ 10–15 kWh of electricity per kg of hydrogen.”  
+> “Liquefaction consumes 30–40% of the hydrogen’s total energy content.”
+
+---
+
+## Key Numerical Findings
+
+| Metric | Compressed H₂ (best case) | Liquid H₂ | NH₃ → cracked H₂ (typical) | NH₃ → cracked H₂ (optimistic) |
+|---|---:|---:|---:|---:|
+| **Well → carrier energy retained** | **~68–77%** | **~49%** | **~46%** | **~62–70%** |
+| **Primary loss drivers** | Compression 10–15 kWh/kg (30–45%) | Liquefaction 30–40% + boil‑off | Synthesis + cracking losses (~35–50%) | Advanced synthesis/cracking + better H₂ plant |
+| **Logistics cost & complexity** | High (composite tanks, chillers, stations) | Very high (cryogenics, boil‑off) | Low (LPG‑style tanks, ships, pipelines) |
+| **Best use cases** | Passenger cars (if infra exists) | Rockets, niche aviation | Bulk shipping, long‑distance transport, industry |
+
+---
+
+## Comparative Tradeoffs
+
+- **Compressed Hydrogen**  
+  - *Pros:* Highest energy retention; fewer chemical conversion steps.  
+  - *Cons:* Very expensive tanks and stations; active station cooling (T40, −40 °C) and compression add large capex/opex.
+
+- **Liquid Hydrogen**  
+  - *Pros:* Higher volumetric density than gaseous H₂.  
+  - *Cons:* Extremely energy‑intensive liquefaction; boil‑off losses; cryogenic infrastructure; worst end‑to‑end efficiency.
+
+- **Ammonia**  
+  - *Pros:* Stored and shipped near ambient conditions; existing global logistics; low tank and shipping cost.  
+  - *Cons:* Energy penalty from synthesis and cracking; requires high‑purity cracking for PEM fuel cells; toxic handling and public‑facing safety issues.
+
+**Net insight:** ammonia wins on delivered cost and logistics; compressed H₂ wins on pure energy efficiency. With targeted R&D, ammonia can close most of the efficiency gap while retaining its logistics advantage.
+
+---
+
+## High‑Impact Technical Levers
+
+1. **Upstream H₂ production** — advanced SMR/ATR or methane pyrolysis raising plant efficiency from ~80% → ~90% benefits all carriers.  
+2. **Advanced NH₃ synthesis** — ruthenium or alternative low‑pressure catalysts, plasma or electrochemical routes can reduce synthesis energy and pressure duty.  
+3. **High‑performance cracking** — ruthenium catalysts and membrane‑assisted reactors can push cracking conversion to 90%+.  
+4. **Fuel‑cell stack improvements** — moving stack efficiency from ~50% → 55–60% materially improves well‑to‑wheel outcomes.  
+5. **System integration** — heat recovery, modular reactors, and compact balance‑of‑plant reduce parasitics and startup energy.
+
+**Economic logic:** ammonia’s cheap logistics make it cost‑effective to invest in expensive catalysts and reactors (e.g., ruthenium) because the ROI is driven by delivered energy per dollar rather than raw thermodynamic efficiency alone.
+
+---
+
+## Safety, Regulation, and Market Risk
+
+- **Toxicity:** ammonia is toxic and corrosive; urban retail networks will face stricter siting, containment, and emergency response requirements than existing industrial handling.  
+- **Industrial precedent:** large‑scale ammonia logistics exist (fertiliser industry), so technical safety practices and infrastructure are available — but public‑facing retail deployment is a different regulatory and social challenge.  
+- **Regulatory drag:** permitting, community acceptance, and emergency planning can add capex/opex and slow deployment; a single high‑profile incident could trigger political pushback.  
+- **Net effect:** safety compliance will reduce but not necessarily eliminate ammonia’s cost advantage; the primary risk is deployment speed and financing cost increases due to regulatory uncertainty.
+
+---
+
+## Recommendations
+
+1. **Prioritise ammonia for bulk export and heavy transport** — long‑haul trucking, shipping, industrial feedstock, and remote export corridors are the highest‑value early markets.  
+2. **Fund catalyst and cracking R&D now** — ruthenium‑grade synthesis and cracking, membrane reactors, and modular cracking units deliver the best leverage on delivered energy.  
+3. **Invest in upstream H₂ improvements** — pyrolysis and advanced reforming raise the baseline energy available to all carriers.  
+4. **Parallel fuel‑cell development** — improve stack efficiency and transient performance to reduce battery buffering and improve system economics.  
+5. **Proactively address safety and public acceptance** — develop urban station standards, emergency response protocols, and community engagement plans before scaling retail networks.  
+6. **Model delivered cost sensitivity** — run cost‑per‑kg delivered scenarios varying catalyst cost, cracking efficiency, and regulatory adders to identify break‑even points versus compressed H₂.
+
+---
+
+## Final Takeaway
+
+Ammonia is **not** a perfect carrier — it carries an unavoidable thermodynamic penalty — but **it is the cheapest practical way to move large quantities of hydrogen from wells to markets today**. With targeted investment in advanced synthesis, high‑performance cracking, and fuel‑cell efficiency, ammonia can close most of the remaining energy gap and become the dominant commercial choice for bulk hydrogen logistics. The decisive battleground will be **safety regulation and public acceptance**: technical solutions exist, but deployment depends on managing social and regulatory risk.
+
+---
+
+If you want, I can also add a compact `README.md` version for a GitHub repo, or produce a small `data/` JSON file with the numerical assumptions used for sensitivity modelling.
+
+---
 ## Appendix: Browser Context Metadata (Literal)
 
 ```json
