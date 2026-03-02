@@ -390,3 +390,189 @@ So the **stacked ramjet+scramjet system can be ~3× better in effective Isp** th
 Piggybacking **scramjet on ramjet on booster** turns into a **very fuel‑efficient hypersonic cruiser**—on the order of **2–3.5× better effective Isp** and **multiple‑times better range per kg fuel** than a rocket plane, **as long as you stay in the atmosphere and spend real time in the Mach‑2–10 band**.
 
 The moment the mission demands **true space access or simple, robust operations**, the **rocket plane’s brute‑force flexibility** wins back the advantage.
+
+---
+## Staged Ramjet → Scramjet → Expendable Rocket vs Pure Rocket Spaceplane
+
+Caveats baked in:
+
+- Stage 1 (ramjet): supersonic only (Mach 2–4), SR‑71/Concorde‑class heating, not hypersonic.
+- Stage 3 (rocket): expendable, does not re‑enter → no orbital re‑entry TPS.
+
+Target mission: LEO, ~9.5 km/s total Δv.
+
+---
+
+### 1. Δv Budget by Stage
+
+| Stage | Propulsion | Staged Ram→Scram→Rocket | Pure Rocket Spaceplane |
+|-------|------------|-------------------------|------------------------|
+| 1     | Ramjet (M2–4)   | ~1.5–2.0 km/s           | Rocket (part of 9.5 km/s) |
+| 2     | Scramjet (M5–10)| ~3.0–4.0 km/s           | Rocket (part of 9.5 km/s) |
+| 3     | Rocket (expendable) | ~3.5–5.0 km/s       | Rocket (~9.0–9.5 km/s)    |
+| Total | —          | ~9.5 km/s               | ~9.5 km/s              |
+
+---
+
+### 2. TPS and Heating Regimes (with your caveats)
+
+| Stage | Mach Regime | TPS Severity | Notes |
+|-------|-------------|-------------|-------|
+| Ramjet | M2–4 (supersonic) | Moderate (SR‑71/Concorde‑class) | Metals + some insulation; TPS mass maybe 5–10% |
+| Scramjet | M5–10 (hypersonic) | High | 20–30% TPS mass; carbon–carbon, C/SiC, possible active cooling |
+| Rocket (expendable) | Ascent only | Low–moderate | No re‑entry TPS; just ascent heating and engine environment |
+| Pure rocket spaceplane | M0–25, up and back | Very high | Needs full orbital re‑entry TPS on same airframe |
+
+Key change from before:  
+Only **scramjet stage** is a true hypersonic TPS monster.  
+The **rocket stage** is now TPS‑light because it never comes back.
+
+---
+
+### 3. Rocket Portion Mass Ratios (Rocket Only)
+
+Assume LH2‑class Isp ~450 s for upper rocket work.
+
+| Case | Rocket Δv | Approx. Rocket Mass Ratio (m0/mf) | Comment |
+|------|-----------|------------------------------------|---------|
+| Staged stack, expendable rocket | ~3.5–5.0 km/s | ~2.0–2.6 | Easy upper stage, no re‑entry TPS |
+| Pure rocket spaceplane | ~9.5 km/s | ~7–9 | Brutal SSTO‑class mass ratio, plus re‑entry TPS |
+
+So: **your expendable rocket stage is genuinely “cheap” in mass terms**.
+
+---
+
+### 4. Whole‑Vehicle Mass Fractions (Conceptual, with caveats)
+
+#### Staged Ramjet → Scramjet → Expendable Rocket
+
+| Mass Bucket                          | Rough Fraction of Gross Liftoff Mass |
+|--------------------------------------|--------------------------------------|
+| Stage 1 ramjet propellant            | ~10–15%                              |
+| Stage 1 structure + TPS + engine     | ~10–15% (supersonic TPS)            |
+| Stage 2 scramjet propellant          | ~10–15%                              |
+| Stage 2 structure + TPS + engine     | ~20–25% (hypersonic TPS dominates)  |
+| Stage 3 rocket propellant            | ~20–25%                              |
+| Stage 3 structure + engine (no re‑entry TPS) | ~5–10%                      |
+| Staging hardware, interfaces, etc.   | ~3–5%                                |
+| Net payload                          | ~1–4% (optimistic band)             |
+
+#### Pure Rocket Spaceplane (Single Vehicle, Reusable)
+
+| Mass Bucket                          | Rough Fraction of Gross Liftoff Mass |
+|--------------------------------------|--------------------------------------|
+| Rocket propellant                    | ~65–75%                              |
+| Structure + engines                  | ~15–20%                              |
+| Orbital re‑entry TPS (same airframe) | ~5–10%                              
+The staged ram+scram+rocket stack **saves rocket propellant**, but spends that “saved” mass on **multiple hypersonic airframes, TPS, and staging hardware**.
+
+---
+
+### 4. Regime‑by‑Regime Advantage (Same Orbital Mission)
+
+| Regime / Aspect | Staged Ram+Scram+Rocket | Pure Rocket Spaceplane | Practical Outcome |
+|-----------------|-------------------------|------------------------|-------------------|
+| Mach 2–4 (ramjet stage) | Very high Isp, good Δv, but heavy stage | Rocket, low Isp but simpler | Airbreather wins efficiency, loses mass |
+| Mach 5–10 (scramjet stage) | Extremely high Isp, big Δv, heavy TPS | Rocket, very fuel‑hungry | Same story: efficient but heavy |
+| 40–100 km, vacuum | Only rocket 3rd stage works | Same rocket engine | Tie (both rocket) |
+| Rocket Δv required | ~3.5–5 km/s | ~9.5 km/s | Staged stack wins here |
+| Rocket stage mass ratio | ~2–2.6 | ~7–9 | Staged stack wins here |
+| Total vehicle mass ratio | Still ~6–9 | ~7–9 | Ends up similar band |
+| Payload fraction to LEO | ~1–3% | ~0.5–2% | Staged stack maybe modestly better |
+| Hardware complexity | Three hypersonic stages, multiple TPS, staging | One hypersonic vehicle | Staged stack much worse |
+| Development/ops risk | Extreme | Very high | Staged stack worse |
+
+---
+
+### 5. Why This Is “Brutal but Doable”
+
+If you **force** a staged ram+scram+rocket stack:
+
+- You **do** reduce the rocket Δv and make the rocket stage easy.  
+- You **do** get better **fuel efficiency** on paper.  
+- You **do** get a **slightly better payload fraction** than a pure rocket spaceplane in optimistic scenarios.
+
+But you pay for it with:
+
+- **Two hypersonic airframes** instead of one.  
+- **Two sets of TPS**, sized for Mach 10, and orbital reentry.  
+- **Three sets of engines**, plus staging hardware.  
+- Integration, separation, guidance, and operations complexity that’s off the charts.
+
+In other words:
+
+> You can absolutely stage ram → scram → rocket to orbit on paper.  
+> The physics works.  
+> The mass fraction is only *slightly* better than a pure rocket spaceplane.  
+> The complexity is so brutal that a conventional two‑stage rocket is almost always the saner choice.
+
+---
+
+## Fairer Comparison: E‑Fan Tug + Ram/Scram Stack vs Rocket Plane + Mothership
+
+Instead of comparing a staged ram→scram→rocket stack to a standalone rocket plane,  
+a more honest analogue is:
+
+- **Concept A:** E‑fan tug plane + piggyback ram/scram/rocket assembly  
+- **Concept B:** Mothership + rocket plane (air‑launch style)
+
+Both use a **carrier aircraft** to offload takeoff and low‑altitude climb.
+
+---
+
+### 1. Architecture Overview
+
+| Concept | Carrier | High‑speed Vehicle | Final Propulsion to Orbit |
+|--------|---------|--------------------|---------------------------|
+| A: E‑fan tug + ram/scram/rocket | E‑fan tug (subsonic) | Piggyback stack: ramjet stage, scramjet stage, expendable rocket | Expendable rocket upper stage |
+| B: Mothership + rocket plane | Turbofan/turboprop mothership (subsonic) | Rocket plane (single vehicle) | Rocket engines on rocket plane |
+
+---
+
+### 2. Δv Split (Very Rough)
+
+| Segment | Concept A: Tug + Ram/Scram/Rocket | Concept B: Mothership + Rocket Plane |
+|---------|-----------------------------------|--------------------------------------|
+| Carrier climb (subsonic) | ~0.2–0.3 km/s (tug) | ~0.2–0.3 km/s (mothership) |
+| Supersonic (M2–4) | ~1.5–2.0 km/s (ramjet) | Rocket (part of 9.5 km/s) |
+| Hypersonic (M5–10) | ~3.0–4.0 km/s (scramjet) | Rocket (part of 9.5 km/s) |
+| Rocket ascent | ~3.5–5.0 km/s (expendable) | ~9.0–9.5 km/s (reusable rocket plane) |
+| Total to LEO | ~9.5 km/s | ~9.5 km/s |
+
+---
+
+### 3. Reuse and TPS Burden
+
+| Aspect | Concept A: Tug + Ram/Scram/Rocket | Concept B: Mothership + Rocket Plane |
+|--------|-----------------------------------|--------------------------------------|
+| Carrier reuse | E‑fan tug fully reusable | Mothership fully reusable |
+| Supersonic stage TPS | Moderate (M2–4, SR‑71‑class) | None (mothership subsonic) |
+| Hypersonic stage TPS | High (M5–10 scramjet) | None (rocket plane handles all heating) |
+| Rocket stage TPS | Ascent only, expendable | Full orbital re‑entry TPS on rocket plane |
+| Returning hardware | Tug + ramjet + scramjet | Mothership + rocket plane |
+
+---
+
+### 4. Payload and Complexity (Qualitative)
+
+| Metric | Concept A: Tug + Ram/Scram/Rocket | Concept B: Mothership + Rocket Plane |
+|--------|-----------------------------------|--------------------------------------|
+| Payload fraction to LEO | Potentially higher (1–4% band) if scram stage is efficient | Lower (0.5–2%) but simpler |
+| Fuel efficiency (kg fuel per kg to orbit) | Better on paper (airbreathing Δv) | Worse (all rocket above carrier) |
+| Number of distinct vehicles | 4 (tug, ram/scram stack, rocket stage) | 2 (mothership, rocket plane) |
+| Integration/staging complexity | Very high (multiple separations, two airbreathers) | High but more conventional |
+| Development risk | Extreme | Very high but more familiar |
+
+---
+
+### 5. Takeaway
+
+- Comparing a **staged ram/scram/rocket stack** to a **pure rocket plane** is indeed unfair;  
+  a closer analogue is **tug + stack** vs **mothership + rocket plane**.
+- In that fairer framing:
+  - The **tug + ram/scram/rocket** concept can win on **fuel efficiency** and **payload fraction** on paper.  
+  - The **mothership + rocket plane** concept wins on **architectural simplicity**, heritage, and likely real‑world viability.
+
+This section is mainly a **thought experiment**: it shows that once you give *both* sides a carrier aircraft,  
+airbreathing still buys you Δv and fuel efficiency—but at the cost of a lot of moving parts.
+
