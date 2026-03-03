@@ -241,7 +241,7 @@ $$
 | Fe–Br, Cu–Br, Ni–Cl, Ca–Cl, V–Cl, Cr–Cl, Mo–Cl, W–Cl | Halide | 800–900 | ~3 | Low-maturity, structurally screened   |
 
 ---
-====================  REACTION BLOCKS  ====================
+```====================  REACTION BLOCKS  ====================
 
 R1: FeCl₃(s) → FeCl₂(s) + 3/2 Cl₂(g)
     T = 420 K,  ΔG = 25,  ΔH = 4
@@ -335,4 +335,4 @@ A–NA Sep (Acid–Neutral Separation)
 - Water management:
     Steam generation for R2
     Condensation / recycle from G–G Sep and A–NA Sep
-- Off‑gas treatment for vent streams (Cl₂ traces, acid mists)
+- Off‑gas treatment for vent streams (Cl₂ traces, acid mists)```
