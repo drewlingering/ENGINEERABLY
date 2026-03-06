@@ -73,5 +73,7 @@ tags: [carbon-removal, climate, syllabus]
 4. **Frontier CDR landscape**  
 5. One pathway deep dive (DAC or biochar)  
 6. One policy piece (ICVCM or DOE Carbon Negative Shot)
+
 ---
+
 >Source https://ndeich.substack.com/p/carbon-removal-101-syllabus
