@@ -46,9 +46,9 @@ Comparing **electrochemical hardware delivering peak power**:
 
 
 
-\[
-\frac{3.0\ \text{kW/kg (BEV pack)}}{0.3\ \text{kW/kg (Mirai stack)}} \approx 10\times
-\]
+\
+$\frac{3.0\ \text{kW/kg (BEV pack)}}{0.3\ \text{kW/kg (Mirai stack)}} \approx 10\times$
+\
 
 
 
@@ -113,17 +113,18 @@ This is a **core strength** of FCEVs and not easily matched by BEVs.
 
 ## 5. Performance & Refuel/Charge Comparison
 
-| **Metric** | **Toyota Mirai (Gen‑2 FCEV)** | **Tesla Model 3 / Gen‑3 BEV** |
-|-----------|--------------------------------|--------------------------------|
-| **Peak system power** | ~134 kW | ~211–250 kW |
-| **0–60 mph** *| ~9.0 s | ~4.2–5.1 s (LR), ~3.1 s (Performance) |
-| **Top speed** | ~111 mph | ~140–145 mph |
-| **Kerb weight** | ~1,850 kg | ~1,760–1,820 kg |
-| **Range (real)** | ~350–400 miles | ~300–350 miles |
-| **Refuel time** | **3–5 min** | **25–35 min** (DC fast), hours on AC |
-| **Ride quality** | **Executive‑class, extremely smooth** | Good, but not Mirai‑level NVH |
-| **Power density (system)** | **~0.3–0.4 kW/kg** | **~2.5–3.0 kW/kg** |
-| **Scalability** | Stack can be doubled → huge power jump | Battery scaling increases weight heavily |
+| Metric                 | Toyota Mirai (Gen‑2 FCEV)            | Tesla Model 3 / Gen‑3 BEV                     |
+|------------------------|---------------------------------------|-----------------------------------------------|
+| Peak system power      | ~134 kW                               | ~211–250 kW                                   |
+| 0–60 mph               | ~9.0 s                                | ~4.2–5.1 s (LR), ~3.1 s (Performance)         |
+| Top speed              | ~111 mph                              | ~140–145 mph                                  |
+| Kerb weight            | ~1,850 kg                             | ~1,760–1,820 kg                               |
+| Range (real)           | ~350–400 miles                        | ~300–350 miles                                |
+| Refuel time            | 3–5 min                               | 25–35 min (DC fast), hours on AC              |
+| Ride quality           | Executive‑class, extremely smooth     | Good, but not Mirai‑level NVH                 |
+| Power density (system) | ~0.3–0.4 kW/kg                        | ~2.5–3.0 kW/kg                                |
+| Scalability            | Stack can be doubled → huge power jump | Battery scaling increases weight heavily      |
+
 *eco mode are only a second or semething different (assuming) range anxiety more often makes an ev driver select it
 ---
 
