@@ -46,10 +46,7 @@ Comparing **electrochemical hardware delivering peak power**:
 
 
 
-$$
-\frac{3.0\ \text{kW/kg (BEV pack)}}{0.3\ \text{kW/kg (Mirai stack)}} \approx 10\times
-$$
-
+![Power density ratio](https://latex.codecogs.com/png.latex?\dpi{110}\frac{3.0\ \mathrm{kW/kg\ (BEV\ pack)}}{0.3\ \mathrm{kW/kg\ (Mirai\ stack)}}\approx10\times)
 
 
 This is the **10× power density gap**:
