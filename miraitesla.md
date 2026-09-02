@@ -47,8 +47,10 @@ Comparing **electrochemical hardware delivering peak power**:
 
 
 \
-$\frac{3.0\ \text{kW/kg (BEV pack)}}{0.3\ \text{kW/kg (Mirai stack)}} \approx 10\times$
-\
+$$
+\frac{3.0\ \text{kW/kg (BEV pack)}}{0.3\ \text{kW/kg (Mirai stack)}} \approx 10\times
+$$
+
 
 
 
