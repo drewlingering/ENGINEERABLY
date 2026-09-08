@@ -215,4 +215,74 @@ Hydrogen FCEVs have **real future performance potential** that is not yet exploi
 - **Vehicular H₂ system (oil + gas)** moves from a few‑decade constraint into the **century‑plus regime** for oil and roughly **two centuries** for gas.  
 - **Coal‑based DCFC** for domestic/industrial power still outlives the vehicular system by a factor of about **2–3**, but:
   - Both are now in the **“hundreds of years” ballpark**, rather than a world where vehicles hit a hard resource wall first.
+---
+
+
+## 1️⃣ Efficient carbon separation (no CO₂)
+
+Several industrial processes can split hydrocarbons into **H₂ + solid carbon** without producing CO₂:
+
+- **Catalytic methane pyrolysis**
+- **Plasma‑assisted methane decomposition**
+- **Electrified catalytic cracking**
+- **Hydrocarbon decomposition reactors producing CNTs, graphite, carbon black**
+
+These processes avoid oxidation entirely, so carbon emerges as a **solid**, not CO₂.
+
+### Key reaction (example: methane pyrolysis)
+
+![methane_pyrolysis](https://latex.codecogs.com/svg.latex?\mathrm{CH_4\rightarrow C_{(s)}+2H_2})
+
+This is thermodynamically efficient because energy goes into **breaking C–H bonds**, not oxidizing carbon.
+
+---
+
+## 2️⃣ CO₂ sequestration + geologic hydrogen generation
+
+Injecting CO₂ into **basalt** or **ultramafic rock** can:
+
+- Permanently mineralize CO₂ as **carbonates**
+- Release **H₂** through redox reactions (Fe²⁺ → Fe³⁺)
+- Potentially interact with **radiolytic H₂** sources in deep rock
+
+### Conceptual reaction pathway
+
+![basalt_CO2_H2](https://latex.codecogs.com/svg.latex?\mathrm{CO_2+Fe^{2+}\text{-minerals}\rightarrow\text{carbonates}+H_2})
+
+This is supported by multiple studies showing **CO₂ mineralization + H₂ generation** in basalt formations.
+
+---
+
+## 3️⃣ Timescales
+
+| Process | Typical timescale |
+|--------|-------------------|
+| CO₂ mineralization in basalt | **Years → decades** |
+| Initial H₂ generation | **Decades** |
+| Sustained geologic H₂ production | **Centuries → millennia** |
+
+Enhanced rock weathering (ERW) can accelerate CO₂ uptake but **does not itself generate H₂** — that requires Fe‑rich basalt or ultramafic rock.
+
+---
+
+## 4️⃣ Summary equations (Codecogs format)
+
+### Coal DCFC longevity
+![Lifetime_coal](https://latex.codecogs.com/svg.latex?\text{Lifetime}_{\text{coal}}\approx\frac{40{,}000-50{,}000}{80-100}\approx400-500\ \text{ans})
+
+### Natural gas longevity (with bio + electro‑H₂)
+![Lifetime_NG](https://latex.codecogs.com/svg.latex?\text{Lifetime}_{\text{NG}}\approx\frac{20{,}000-22{,}000}{100-120}\approx195-215\ \text{ans})
+
+### Oil longevity (conventional + tar sands, etc.)
+![Lifetime_oil](https://latex.codecogs.com/svg.latex?\text{Lifetime}_{\text{oil}}\approx\frac{20{,}000-25{,}000}{190}\approx105-130\ \text{ans})
+
+---
+
+## 🔥 Bottom line
+
+- **Yes**, you *can* split hydrocarbons into **H₂ + solid carbon** with **no CO₂**.  
+- **Yes**, CO₂ sequestration in basalt can **generate geologic hydrogen**.  
+- **Timescale:** mineralization (years–decades), hydrogen generation (decades–centuries).  
+- Your resource‑longevity equations now render cleanly on GitHub via Codecogs.
+
 
