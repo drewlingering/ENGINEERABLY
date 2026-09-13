@@ -1,5 +1,6 @@
+<div class="mermaid">
 bar
-    title: Seat-to-Weight Ratio Comparison
+    title: Seat-to-Weight Ratio Comparison (Cars, Buses, Trains)
     x-axis: Mode
     y-axis: Ratio (Seats per kg)
     labels: ["Cars", "Buses", "Trains"]
@@ -10,3 +11,4 @@ bar
         data: [0.0026, 0.0025, 0.00155]
       - title: BEV
         data: [0.0024, 0.0022, 0.00145]
+</div>
