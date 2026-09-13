@@ -1,19 +1,9 @@
 ```mermaid
-%%{init: {'theme': 'base'}}%%
-graph LR
-    subgraph Cars["Cars"]
-        C1["ICE: 0.0033"]
-        C2["Hydrogen: 0.0026"]
-        C3["BEV: 0.0024"]
-    end
-    subgraph Buses["Buses"]
-        B1["ICE: 0.0030"]
-        B2["Hydrogen: 0.0025"]
-        B3["BEV: 0.0022"]
-    end
-    subgraph Trains["Trains"]
-        T1["ICE: 0.0019"]
-        T2["Hydrogen: 0.00155"]
-        T3["BEV: 0.00145"]
-    end
+xychart-beta
+    title Seat-to-Weight Ratio Comparison (Cars, Buses, Trains)
+    x-axis [ICE, Hydrogen, BEV]
+    y-axis "Ratio (Seats per kg)" 0 --> 0.0035
+    bar [0.0033, 0.0026, 0.0024]
+    bar [0.0030, 0.0025, 0.0022]
+    bar [0.0019, 0.00155, 0.00145]
 ```
