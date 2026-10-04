@@ -394,3 +394,95 @@ These satisfy:
 
 All steps: **no combustion**, **no oxygen**, **electric‑only heat**, **solid carbon + hydrogen** as major products.
 ---
+## Appendix — Electrically Driven Decomposition of C₂–C₄ Coproducts  
+### Goal  
+Extend the naphtha → CH₄ → H₂ + C(s) pathway so that **all light hydrocarbons (C₂–C₄)** are also converted into **solid carbon + hydrogen**, using **electric heat only**, with **no combustion**.
+
+---
+
+## 1. Direct Pyrolysis of C₂–C₄ (Electric Heat, No O₂)
+
+Each light alkane can be decomposed directly into solid carbon and hydrogen using **electrically heated pyrolysis** (packed bed, fluidised bed, induction furnace, or plasma).
+
+### Ethane  
+![equation](https://latex.codecogs.com/png.latex?C_2H_6%20\rightarrow%202C_{(s)}%20+%203H_2)
+
+### Propane  
+![equation](https://latex.codecogs.com/png.latex?C_3H_8%20\rightarrow%203C_{(s)}%20+%204H_2)
+
+### Butane (n‑ or iso‑)  
+![equation](https://latex.codecogs.com/png.latex?C_4H_{10}%20\rightarrow%204C_{(s)}%20+%205H_2)
+
+**Process characteristics:**  
+- 800–1100 °C  
+- Resistive, induction, or plasma heating  
+- Strictly inert atmosphere (N₂, Ar)  
+- Carbon deposits on reactor surfaces or is collected downstream  
+- Hydrogen purified via PSA/membranes  
+
+This route mirrors methane pyrolysis but with different stoichiometry.
+
+---
+
+## 2. Secondary Cracking Route (Convert C₂–C₄ → CH₄ + H₂, Then Use Main CH₄ Pyrolysis Block)
+
+If you prefer **one unified pyrolysis module** (CH₄ → C + 2H₂), you can first crack C₂–C₄ into methane.
+
+### Ethane → Methane + Hydrogen  
+![equation](https://latex.codecogs.com/png.latex?C_2H_6%20\rightarrow%20CH_4%20+%20H_2)
+
+### Propane → Methane + Hydrogen + Light Fragments  
+![equation](https://latex.codecogs.com/png.latex?C_3H_8%20\rightarrow%20CH_4%20+%20H_2%20+%20C_2H_4)
+
+### Butane → Methane + Hydrogen + Light Fragments  
+![equation](https://latex.codecogs.com/png.latex?C_4H_{10}%20\rightarrow%202CH_4%20+%20H_2%20+%20C_2H_6)
+
+**Then feed CH₄ into your main turquoise‑hydrogen reactor:**
+
+![equation](https://latex.codecogs.com/png.latex?CH_4%20\rightarrow%20C_{(s)}%20+%202H_2)
+
+This keeps the system modular:  
+- **Stage 1:** Electrically crack naphtha → CH₄ + C₂–C₄  
+- **Stage 2:** Electrically crack C₂–C₄ → CH₄ + H₂  
+- **Stage 3:** CH₄ pyrolysis → C(s) + H₂  
+
+All hydrocarbons ultimately pass through the same high‑T pyrolysis block.
+
+---
+
+## 3. Electrochemical Decomposition of C₂–C₄ (Experimental but Valid)
+
+### Molten‑Salt Electrolysis  
+Hydrocarbon dispersed in molten carbonate/chloride → apply current → C–H bond cleavage →  
+- **Cathode:** H₂ evolution  
+- **Anode:** Solid carbon deposition  
+
+### Solid‑Oxide Electrochemical Cells (SOEC)  
+Feed C₂–C₄ under non‑oxidative bias → controlled dehydrogenation → H₂ + solid carbon.
+
+These satisfy your constraints:  
+- All enthalpy from **electricity**  
+- **No combustion**  
+- **Carbon retained as solid**  
+
+---
+
+## 4. Integrated Flow Logic
+
+1. **Naphtha cracking (electric, no O₂)** → CH₄ + C₂–C₄ + H₂  
+2. **Gas separation** → CH₄ stream, C₂–C₄ stream  
+3. **C₂–C₄ processing:**  
+   - **Option A:** Direct pyrolysis → C(s) + H₂  
+   - **Option B:** Secondary cracking → CH₄ + H₂ → main CH₄ pyrolysis  
+4. **Unified output:**  
+   - **Hydrogen** (PSA/membrane purified)  
+   - **Solid carbon** (collected, saleable or sequestered)
+
+All steps are **electrically driven**, **non‑oxidative**, and produce **only H₂ + solid C** as major products.
+
+---
+
+## 5. Summary  
+This appendix extends the main naphtha pathway so that **every hydrocarbon fragment**, including C₂–C₄ coproducts, is fully converted into **solid carbon + hydrogen** using **electric heat or electrochemical methods**, with **zero combustion** and **zero CO₂ formation**.
+
+---
