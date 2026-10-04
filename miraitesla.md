@@ -286,3 +286,111 @@ Enhanced rock weathering (ERW) can accelerate CO₂ uptake but **does not itself
 - Your resource‑longevity equations now render cleanly on GitHub via Codecogs.
 
 
+---
+## Electrically Driven Non‑Combustive Decomposition of Naphtha  
+### Goal  
+Convert a generic hydrocarbon mixture (naphtha) into **solid carbon** and **hydrogen** using **electricity only**, with **no combustion** and **no oxidation**.
+
+### Idealised Reaction  
+![equation](https://latex.codecogs.com/png.latex?C_nH_m%20\rightarrow%20nC_{(s)}%20+%20\frac{m}{2}H_2)
+
+Because naphtha is a mixture (C₅–C₁₂), the process is implemented as a **multi‑stage electrically powered chain**, not a single electrolysis step.
+
+---
+
+## 1. Electrically Heated Non‑Oxidative Cracking of Naphtha  
+**Objective:** Break naphtha into lighter hydrocarbons (CH₄, C₂–C₄, aromatics) without oxygen.
+
+**Method:**  
+- Electrically heated tubular reactor or plasma reactor  
+- 800–1000 °C, resistive or induction heating  
+- Inert carrier gas (N₂, Ar)  
+- Pure pyrolysis — **no combustion**
+
+**Output:**  
+- CH₄  
+- C₂–C₄ gases  
+- H₂  
+- Light aromatics  
+- Heavy tar (recycled)
+
+---
+
+## 2. Gas Separation & Conditioning  
+Cool → condense → separate:
+
+- **Methane‑rich stream**  
+- **Hydrogen‑rich stream**  
+- **C₂–C₄ coproducts**
+
+Techniques: PSA, membranes, cryogenic separation.
+
+---
+
+## 3. Electrically Heated Methane Pyrolysis (Turquoise Hydrogen)  
+Core reaction:
+
+![equation](https://latex.codecogs.com/png.latex?CH_4%20\rightarrow%20C_{(s)}%20+%202H_2)
+
+**Reactor options:**  
+- Liquid‑metal pyrolysis (Sn, Bi)  
+- Packed‑bed / fluidised‑bed pyrolysis  
+- Microwave / RF plasma pyrolysis  
+
+All heat supplied electrically.
+
+**Outputs:**  
+- High‑purity H₂ (after PSA/membrane polishing)  
+- Solid carbon (carbon black, graphitic carbon, CNT‑rich depending on reactor)
+
+---
+
+## 4. Hydrogen Purification  
+- PSA  
+- Membrane polishing  
+- Cryogenic purification  
+Produces fuel‑cell‑grade H₂ (99.9%+).
+
+---
+
+## 5. Carbon Handling  
+Collected carbon can be:  
+- Sold (carbon black, conductive carbon)  
+- Used in composites  
+- Permanently sequestered
+
+---
+
+## 6. Optional: Direct Electrochemical Hydrocarbon Decomposition  
+Experimental but viable:
+
+### Molten‑Salt Electrolysis  
+Hydrocarbon dispersed in molten salt → electrochemical splitting → H₂ + solid C.
+
+### Solid‑Oxide Electrochemical Systems  
+Hydrocarbon fed to high‑T SOEC → controlled decomposition → H₂ + C.
+
+These satisfy:  
+- **All energy from electricity**  
+- **No combustion**  
+- **Carbon retained as solid**
+
+---
+
+## 7. Why This Pathway Works  
+- Naphtha is a mixture → direct electrolysis is impractical.  
+- Methane pyrolysis is mature and already used for **turquoise hydrogen**.  
+- Electrically powered cracking → methane → pyrolysis = **realistic industrial chain**.
+
+---
+
+## 8. Summary  
+1. Electrically heated cracking of naphtha  
+2. Gas separation  
+3. Electrically heated methane pyrolysis  
+4. Hydrogen purification  
+5. Solid carbon recovery  
+6. Optional direct electrochemical decomposition  
+
+All steps: **no combustion**, **no oxygen**, **electric‑only heat**, **solid carbon + hydrogen** as major products.
+---
