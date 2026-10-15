@@ -1,6 +1,6 @@
 # Catastrophic Failure Modes in Digital Displacement Hydraulic Systems
 
-##Scenario
+## Scenario
 
 Conventional: swash plate bent-axis rotary piston: operator punches out burst disk explosive destructuve safety override
 DigDisp: operator doesn't know what the **** is going on till it's too late
