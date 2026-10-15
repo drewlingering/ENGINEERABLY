@@ -2,8 +2,9 @@
 
 ## Scenario
 
-Conventional: swash plate bent-axis rotary piston: operator punches out burst disk explosive destructuve safety override
-DigDisp: operator doesn't know what the **** is going on till it's too late
+Conventional: swash plate bent-axis rotary piston: operator punches out burst disk explosive destructuve safety override.
+
+DigDisp: operator doesn't know what the **** is going on till it's too late.
 
 ## Executive Summary
 
