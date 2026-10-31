@@ -29,7 +29,7 @@ Assuming mature DCFCs actually achieve the efficiencies frequently discussed in 
 Long-term baseload electricity:
 ---
 | System                     | Plausible long-term LCOE |
-| -------------------------- | -----------------------: |
+| -------------------------- | ------------------------ |
 | Existing gas CCGT (no CCS) |     £40-70/MWh           |
 | Gas + CCS                  |    £70-120/MWh           |
 | Large nuclear              |    £70-140/MWh           |
