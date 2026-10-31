@@ -27,15 +27,16 @@ The critical economic question is whether **fuel cells plus carbon feedstocks** 
 Assuming mature DCFCs actually achieve the efficiencies frequently discussed in the literature (roughly 60-80% electrical efficiency, depending on architecture) and CO₂ capture remains relatively inexpensive because the exhaust stream is highly concentrated, DCFCs could be surprisingly competitive. DCFCs are attractive because they convert carbon directly to electricity and produce a concentrated CO₂ stream that is easier to capture than flue gases from combustion. [[en.wikipedia.org]](https://en.wikipedia.org/wiki/Direct_carbon_fuel_cell), [[resources.nsw.gov.au]](https://www.resources.nsw.gov.au/sites/default/files/2022-11/development-of-a-1-kw-modular-direct-carbon-fuel-cell-demonstration-report.pdf)
 ### Electricity
 Long-term baseload electricity:
-
-| System | Plausible long-term LCOE |
-| --- | ---: |
-| Existing gas CCGT (no CCS) | £40-70/MWh |
-| Gas + CCS | £70-120/MWh |
-| Large nuclear | £70-140/MWh |
-| Wind + storage dominated | £60-150/MWh |
-| Renewable H₂ → fuel cell | £120-250/MWh |
-| DCFC + carbon storage | **£35-75/MWh** |
+---
+| System                     | Plausible long-term LCOE |
+| -------------------------- | -----------------------: |
+| Existing gas CCGT (no CCS) |     £40-70/MWh           |
+| Gas + CCS                  |    £70-120/MWh           |
+| Large nuclear              |    £70-140/MWh           |
+| Wind + storage dominated   |    £60-150/MWh           |
+| Renewable H₂ → fuel cell   |   £120-250/MWh           |
+| DCFC + carbon storage      | **£35-75/MWh**           |
+---
 My estimate for your mature ecosystem would be around:
 
 **£45-65/MWh (4.5-6.5 p/kWh)**
