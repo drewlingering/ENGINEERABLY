@@ -486,5 +486,3 @@ All steps are **electrically driven**, **non‑oxidative**, and produce **only H
 This appendix extends the main naphtha pathway so that **every hydrocarbon fragment**, including C₂–C₄ coproducts, is fully converted into **solid carbon + hydrogen** using **electric heat or electrochemical methods**, with **zero combustion** and **zero CO₂ formation**.
 
 ---
-<iframe src="https://1drv.ms/w/c/e42c396803c742d4/IQRNT1OwsLKwSrlqBpdZsULWAXYGq-31QanBEPZGkwYDusA" width="476px" height="288px" frameborder="0" title="PowerPoint Viewer">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
----
